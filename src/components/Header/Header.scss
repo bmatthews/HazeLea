@@ -9,10 +9,10 @@
 
 @import '../variables.scss';
 
-$brand-color: #61dafb;
+$brand-color: #000;
 
 .root {
-  background: #373277;
+  background: #fff;
   color: #fff;
 }
 
@@ -20,6 +20,7 @@ $brand-color: #61dafb;
   margin: 0 auto;
   padding: 20px 0;
   max-width: $max-content-width;
+  border-bottom: 1px solid #000;
 }
 
 .brand {
@@ -30,6 +31,7 @@ $brand-color: #61dafb;
 
 .brandTxt {
   margin-left: 10px;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 .nav {

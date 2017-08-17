@@ -16,23 +16,24 @@
 
 .container {
   margin: 0 auto;
-  padding: 0 0 40px;
+  padding: 20px 0;
   max-width: $max-content-width;
 }
 
-.news {
-  padding: 0;
+.images {
 }
 
-.newsItem {
-  list-style-type: none;
-  padding-bottom: 6px;
+.image {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
 
-.newsTitle {
-  font-size: 1.125em;
+.content {
+  font-family: 'Josefin Slab', serif;
 }
 
-.newsTitle, .newsDesc {
-  display: block;
+.contentHeader {
+  font-family: 'Fredericka the Great', cursive;
+  text-decoration: underline;
 }
