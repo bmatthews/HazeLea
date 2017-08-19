@@ -56,61 +56,61 @@ module.exports =
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
-  __webpack_require__(91);
+  __webpack_require__(95);
   
-  var _path = __webpack_require__(25);
+  var _path = __webpack_require__(26);
   
   var _path2 = _interopRequireDefault(_path);
   
-  var _express = __webpack_require__(108);
+  var _express = __webpack_require__(112);
   
   var _express2 = _interopRequireDefault(_express);
   
-  var _cookieParser = __webpack_require__(105);
+  var _cookieParser = __webpack_require__(109);
   
   var _cookieParser2 = _interopRequireDefault(_cookieParser);
   
-  var _bodyParser = __webpack_require__(103);
+  var _bodyParser = __webpack_require__(107);
   
   var _bodyParser2 = _interopRequireDefault(_bodyParser);
   
-  var _expressJwt = __webpack_require__(110);
+  var _expressJwt = __webpack_require__(114);
   
   var _expressJwt2 = _interopRequireDefault(_expressJwt);
   
-  var _expressGraphql = __webpack_require__(109);
+  var _expressGraphql = __webpack_require__(113);
   
   var _expressGraphql2 = _interopRequireDefault(_expressGraphql);
   
-  var _jsonwebtoken = __webpack_require__(117);
+  var _jsonwebtoken = __webpack_require__(121);
   
   var _jsonwebtoken2 = _interopRequireDefault(_jsonwebtoken);
   
-  var _server = __webpack_require__(124);
+  var _server = __webpack_require__(128);
   
   var _server2 = _interopRequireDefault(_server);
   
-  var _prettyError = __webpack_require__(123);
+  var _prettyError = __webpack_require__(127);
   
   var _prettyError2 = _interopRequireDefault(_prettyError);
   
-  var _passport = __webpack_require__(39);
+  var _passport = __webpack_require__(41);
   
   var _passport2 = _interopRequireDefault(_passport);
   
-  var _schema = __webpack_require__(43);
+  var _schema = __webpack_require__(45);
   
   var _schema2 = _interopRequireDefault(_schema);
   
-  var _routes = __webpack_require__(47);
+  var _routes = __webpack_require__(49);
   
   var _routes2 = _interopRequireDefault(_routes);
   
-  var _assets = __webpack_require__(90);
+  var _assets = __webpack_require__(94);
   
   var _assets2 = _interopRequireDefault(_assets);
   
-  var _config = __webpack_require__(13);
+  var _config = __webpack_require__(14);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -186,7 +186,7 @@ module.exports =
             case 0:
               _context.prev = 0;
               statusCode = 200;
-              template = __webpack_require__(87);
+              template = __webpack_require__(91);
               data = { title: '', description: '', css: '', body: '', entry: _assets2.default.main.js };
   
   
@@ -251,7 +251,7 @@ module.exports =
   server.use(function (err, req, res, next) {
     // eslint-disable-line no-unused-vars
     console.log(pe.render(err)); // eslint-disable-line no-console
-    var template = __webpack_require__(86);
+    var template = __webpack_require__(90);
     var statusCode = err.status || 500;
     res.status(statusCode);
     res.send(template({
@@ -336,15 +336,15 @@ module.exports =
 
   'use strict';
   
-  var _assign = __webpack_require__(22);
+  var _assign = __webpack_require__(23);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _stringify = __webpack_require__(93);
+  var _stringify = __webpack_require__(97);
   
   var _stringify2 = _interopRequireDefault(_stringify);
   
-  var _slicedToArray2 = __webpack_require__(101);
+  var _slicedToArray2 = __webpack_require__(105);
   
   var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
   
@@ -547,63 +547,6 @@ module.exports =
 
 /***/ }),
 /* 13 */
-/***/ (function(module, exports) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  /* eslint-disable max-len */
-  /* jscs:disable maximumLineLength */
-  
-  var port = exports.port = process.env.PORT || 3000;
-  var host = exports.host = process.env.WEBSITE_HOSTNAME || 'localhost:' + port;
-  
-  var databaseUrl = exports.databaseUrl = process.env.DATABASE_URL || 'postgresql://demo:Lqk62xg6TBm5UhfR@demo.ctbl5itzitm4.us-east-1.rds.amazonaws.com:5432/membership01';
-  
-  var analytics = exports.analytics = {
-  
-    // https://analytics.google.com/
-    google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-XXXXX-X' }
-  
-  };
-  
-  var auth = exports.auth = {
-  
-    jwt: { secret: process.env.JWT_SECRET || 'React Starter Kit' },
-  
-    // https://developers.facebook.com/
-    facebook: {
-      id: process.env.FACEBOOK_APP_ID || '186244551745631',
-      secret: process.env.FACEBOOK_APP_SECRET || 'a970ae3240ab4b9b8aae0f9f0661c6fc'
-    },
-  
-    // https://cloud.google.com/console/project
-    google: {
-      id: process.env.GOOGLE_CLIENT_ID || '251410730550-ahcg0ou5mgfhl8hlui1urru7jn5s12km.apps.googleusercontent.com',
-      secret: process.env.GOOGLE_CLIENT_SECRET || 'Y8yR9yZAhm9jQ8FKAL8QIEcd'
-    },
-  
-    // https://apps.twitter.com/
-    twitter: {
-      key: process.env.TWITTER_CONSUMER_KEY || 'Ie20AZvLJI2lQD5Dsgxgjauns',
-      secret: process.env.TWITTER_CONSUMER_SECRET || 'KTZ6cxoKnEakQCeSpZlaUCJWGAlTEBJj0y2EMkUBujA7zWSvaQ'
-    }
-  
-  };
-
-/***/ }),
-/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -612,11 +555,11 @@ module.exports =
     value: true
   });
   
-  var _extends2 = __webpack_require__(99);
+  var _extends2 = __webpack_require__(103);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(100);
+  var _objectWithoutProperties2 = __webpack_require__(104);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -644,7 +587,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Location = __webpack_require__(37);
+  var _Location = __webpack_require__(39);
   
   var _Location2 = _interopRequireDefault(_Location);
   
@@ -731,6 +674,63 @@ module.exports =
   exports.default = Link;
 
 /***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  /**
+   * React Starter Kit (https://www.reactstarterkit.com/)
+   *
+   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE.txt file in the root directory of this source tree.
+   */
+  
+  /* eslint-disable max-len */
+  /* jscs:disable maximumLineLength */
+  
+  var port = exports.port = process.env.PORT || 3000;
+  var host = exports.host = process.env.WEBSITE_HOSTNAME || 'localhost:' + port;
+  
+  var databaseUrl = exports.databaseUrl = process.env.DATABASE_URL || 'postgresql://demo:Lqk62xg6TBm5UhfR@demo.ctbl5itzitm4.us-east-1.rds.amazonaws.com:5432/membership01';
+  
+  var analytics = exports.analytics = {
+  
+    // https://analytics.google.com/
+    google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-XXXXX-X' }
+  
+  };
+  
+  var auth = exports.auth = {
+  
+    jwt: { secret: process.env.JWT_SECRET || 'React Starter Kit' },
+  
+    // https://developers.facebook.com/
+    facebook: {
+      id: process.env.FACEBOOK_APP_ID || '186244551745631',
+      secret: process.env.FACEBOOK_APP_SECRET || 'a970ae3240ab4b9b8aae0f9f0661c6fc'
+    },
+  
+    // https://cloud.google.com/console/project
+    google: {
+      id: process.env.GOOGLE_CLIENT_ID || '251410730550-ahcg0ou5mgfhl8hlui1urru7jn5s12km.apps.googleusercontent.com',
+      secret: process.env.GOOGLE_CLIENT_SECRET || 'Y8yR9yZAhm9jQ8FKAL8QIEcd'
+    },
+  
+    // https://apps.twitter.com/
+    twitter: {
+      key: process.env.TWITTER_CONSUMER_KEY || 'Ie20AZvLJI2lQD5Dsgxgjauns',
+      secret: process.env.TWITTER_CONSUMER_SECRET || 'KTZ6cxoKnEakQCeSpZlaUCJWGAlTEBJj0y2EMkUBujA7zWSvaQ'
+    }
+  
+  };
+
+/***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -745,11 +745,11 @@ module.exports =
   
   var _bluebird2 = _interopRequireDefault(_bluebird);
   
-  var _nodeFetch = __webpack_require__(119);
+  var _nodeFetch = __webpack_require__(123);
   
   var _nodeFetch2 = _interopRequireDefault(_nodeFetch);
   
-  var _config = __webpack_require__(13);
+  var _config = __webpack_require__(14);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -815,7 +815,7 @@ module.exports =
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(107), __esModule: true };
+  module.exports = { "default": __webpack_require__(111), __esModule: true };
 
 /***/ }),
 /* 20 */
@@ -825,7 +825,7 @@ module.exports =
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(95);
+  var _defineProperty = __webpack_require__(99);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -1070,7 +1070,7 @@ module.exports =
       throw err;
     }
     try {
-      str = str || __webpack_require__(24).readFileSync(filename, 'utf8')
+      str = str || __webpack_require__(25).readFileSync(filename, 'utf8')
     } catch (ex) {
       rethrow(err, null, lineno)
     }
@@ -1103,30 +1103,36 @@ module.exports =
 
 /***/ }),
 /* 22 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = require("babel-runtime/core-js/object/assign");
+  module.exports = __webpack_require__.p + "c56a8a900f2a0a13ebd128122bd0ec21.jpg";
 
 /***/ }),
 /* 23 */
 /***/ (function(module, exports) {
 
-  module.exports = require("babel-runtime/core-js/promise");
+  module.exports = require("babel-runtime/core-js/object/assign");
 
 /***/ }),
 /* 24 */
 /***/ (function(module, exports) {
 
-  module.exports = require("fs");
+  module.exports = require("babel-runtime/core-js/promise");
 
 /***/ }),
 /* 25 */
 /***/ (function(module, exports) {
 
-  module.exports = require("path");
+  module.exports = require("fs");
 
 /***/ }),
 /* 26 */
+/***/ (function(module, exports) {
+
+  module.exports = require("path");
+
+/***/ }),
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1178,7 +1184,7 @@ module.exports =
   exports.default = Match;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1195,11 +1201,11 @@ module.exports =
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _pathToRegexp = __webpack_require__(88);
+  var _pathToRegexp = __webpack_require__(92);
   
   var _pathToRegexp2 = _interopRequireDefault(_pathToRegexp);
   
-  var _Match = __webpack_require__(26);
+  var _Match = __webpack_require__(27);
   
   var _Match2 = _interopRequireDefault(_Match);
   
@@ -1232,7 +1238,7 @@ module.exports =
   exports.default = Route;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1241,19 +1247,19 @@ module.exports =
     value: true
   });
   
-  var _slicedToArray2 = __webpack_require__(58);
+  var _slicedToArray2 = __webpack_require__(60);
   
   var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
   
-  var _regenerator = __webpack_require__(59);
+  var _regenerator = __webpack_require__(61);
   
   var _regenerator2 = _interopRequireDefault(_regenerator);
   
-  var _getIterator2 = __webpack_require__(56);
+  var _getIterator2 = __webpack_require__(58);
   
   var _getIterator3 = _interopRequireDefault(_getIterator2);
   
-  var _asyncToGenerator2 = __webpack_require__(57);
+  var _asyncToGenerator2 = __webpack_require__(59);
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
@@ -1269,7 +1275,7 @@ module.exports =
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _Route = __webpack_require__(27);
+  var _Route = __webpack_require__(28);
   
   var _Route2 = _interopRequireDefault(_Route);
   
@@ -1594,7 +1600,7 @@ module.exports =
   exports.default = Router;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1627,23 +1633,23 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _emptyFunction = __webpack_require__(111);
+  var _emptyFunction = __webpack_require__(115);
   
   var _emptyFunction2 = _interopRequireDefault(_emptyFunction);
   
-  var _App = __webpack_require__(74);
+  var _App = __webpack_require__(77);
   
   var _App2 = _interopRequireDefault(_App);
   
-  var _Header = __webpack_require__(34);
+  var _Header = __webpack_require__(36);
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Feedback = __webpack_require__(32);
+  var _Feedback = __webpack_require__(34);
   
   var _Feedback2 = _interopRequireDefault(_Feedback);
   
-  var _Footer = __webpack_require__(33);
+  var _Footer = __webpack_require__(35);
   
   var _Footer2 = _interopRequireDefault(_Footer);
   
@@ -1724,7 +1730,7 @@ module.exports =
   exports.default = App;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1761,7 +1767,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _ContentPage = __webpack_require__(75);
+  var _ContentPage = __webpack_require__(78);
   
   var _ContentPage2 = _interopRequireDefault(_ContentPage);
   
@@ -1820,7 +1826,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(ContentPage, _ContentPage2.default);
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1857,7 +1863,105 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _ErrorPage = __webpack_require__(76);
+  var _ContentSection = __webpack_require__(79);
+  
+  var _ContentSection2 = _interopRequireDefault(_ContentSection);
+  
+  var _Link = __webpack_require__(13);
+  
+  var _Link2 = _interopRequireDefault(_Link);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  /**
+   * React Starter Kit (https://www.reactstarterkit.com/)
+   *
+   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE.txt file in the root directory of this source tree.
+   */
+  
+  var ContentSection = function (_Component) {
+    (0, _inherits3.default)(ContentSection, _Component);
+  
+    function ContentSection() {
+      (0, _classCallCheck3.default)(this, ContentSection);
+      return (0, _possibleConstructorReturn3.default)(this, (ContentSection.__proto__ || (0, _getPrototypeOf2.default)(ContentSection)).apply(this, arguments));
+    }
+  
+    (0, _createClass3.default)(ContentSection, [{
+      key: 'render',
+      value: function render() {
+        var imagePostion = this.props.imagePostion;
+  
+        return _react2.default.createElement(
+          'div',
+          { className: _ContentSection2.default.root },
+          _react2.default.createElement(
+            'h3',
+            null,
+            this.props.title
+          ),
+          _react2.default.createElement(
+            'div',
+            {
+              className: imagePostion && imagePostion == 'right' ? _ContentSection2.default.imageWrapperRight : _ContentSection2.default.imageWrapperLeft
+            },
+            _react2.default.createElement('img', { src: this.props.imgSrc, className: _ContentSection2.default.image })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: _ContentSection2.default.contentWrapper },
+            this.props.children
+          )
+        );
+      }
+    }]);
+    return ContentSection;
+  }(_react.Component);
+  
+  exports.default = (0, _withStyles2.default)(ContentSection, _ContentSection2.default);
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _getPrototypeOf = __webpack_require__(8);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(9);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(10);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(12);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(11);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
+  
+  var _react = __webpack_require__(1);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _withStyles = __webpack_require__(4);
+  
+  var _withStyles2 = _interopRequireDefault(_withStyles);
+  
+  var _ErrorPage = __webpack_require__(80);
   
   var _ErrorPage2 = _interopRequireDefault(_ErrorPage);
   
@@ -1914,7 +2018,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(ErrorPage, _ErrorPage2.default);
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1931,7 +2035,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Feedback = __webpack_require__(77);
+  var _Feedback = __webpack_require__(81);
   
   var _Feedback2 = _interopRequireDefault(_Feedback);
   
@@ -1945,25 +2049,53 @@ module.exports =
         'div',
         { className: _Feedback2.default.container },
         _react2.default.createElement(
-          'a',
-          {
-            className: _Feedback2.default.link,
-            href: 'https://gitter.im/kriasoft/react-starter-kit'
-          },
-          'Ask a question'
+          'h4',
+          { className: _Feedback2.default.contactMe },
+          'Contact me:'
         ),
         _react2.default.createElement(
-          'span',
-          { className: _Feedback2.default.spacer },
-          '|'
-        ),
-        _react2.default.createElement(
-          'a',
-          {
-            className: _Feedback2.default.link,
-            href: 'https://github.com/kriasoft/react-starter-kit/issues/new'
-          },
-          'Report an issue'
+          'div',
+          { className: _Feedback2.default.contactDetailsWrapper },
+          _react2.default.createElement(
+            'dl',
+            { className: _Feedback2.default.contactDetails },
+            _react2.default.createElement(
+              'dt',
+              null,
+              'e.'
+            ),
+            _react2.default.createElement(
+              'dd',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'mailto:hello@hazelea.co.uk' },
+                'hello@hazelea.co.uk'
+              )
+            ),
+            _react2.default.createElement(
+              'dt',
+              null,
+              't.'
+            ),
+            _react2.default.createElement(
+              'dd',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'tel:+447598 835 544' },
+                '07598 835 544'
+              )
+            )
+          ),
+          _react2.default.createElement('hr', null),
+          _react2.default.createElement(
+            'h4',
+            { className: _Feedback2.default.contactMe },
+            'Lets be friends'
+          ),
+          _react2.default.createElement('i', { className: 'fa fa-instagram', 'aria-hidden': 'true' }),
+          _react2.default.createElement('i', { className: 'fa fa-facebook-square fa-inverse', 'aria-hidden': 'true' })
         )
       )
     );
@@ -1979,7 +2111,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(Feedback, _Feedback2.default);
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1996,11 +2128,11 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Footer = __webpack_require__(78);
+  var _Footer = __webpack_require__(82);
   
   var _Footer2 = _interopRequireDefault(_Footer);
   
-  var _Link = __webpack_require__(14);
+  var _Link = __webpack_require__(13);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -2064,7 +2196,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(Footer, _Footer2.default);
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2081,15 +2213,15 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Header = __webpack_require__(79);
+  var _Header = __webpack_require__(83);
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Link = __webpack_require__(14);
+  var _Link = __webpack_require__(13);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(35);
+  var _Navigation = __webpack_require__(37);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -2108,7 +2240,12 @@ module.exports =
           _react2.default.createElement(
             'span',
             { className: _Header2.default.brandTxt },
-            'Haze Lea |'
+            'Haze'
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: _Header2.default.brandTxtBottom },
+            'Lea'
           )
         )
       )
@@ -2125,7 +2262,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(Header, _Header2.default);
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2138,7 +2275,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(104);
+  var _classnames = __webpack_require__(108);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -2146,11 +2283,11 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Navigation = __webpack_require__(80);
+  var _Navigation = __webpack_require__(84);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(14);
+  var _Link = __webpack_require__(13);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -2209,7 +2346,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(Navigation, _Navigation2.default);
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2246,7 +2383,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _NotFoundPage = __webpack_require__(81);
+  var _NotFoundPage = __webpack_require__(85);
   
   var _NotFoundPage2 = _interopRequireDefault(_NotFoundPage);
   
@@ -2304,7 +2441,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(NotFoundPage, _NotFoundPage2.default);
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2313,15 +2450,15 @@ module.exports =
     value: true
   });
   
-  var _createBrowserHistory = __webpack_require__(113);
+  var _createBrowserHistory = __webpack_require__(117);
   
   var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
   
-  var _createMemoryHistory = __webpack_require__(114);
+  var _createMemoryHistory = __webpack_require__(118);
   
   var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
   
-  var _useQueries = __webpack_require__(115);
+  var _useQueries = __webpack_require__(119);
   
   var _useQueries2 = _interopRequireDefault(_useQueries);
   
@@ -2339,7 +2476,7 @@ module.exports =
   exports.default = location;
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2348,7 +2485,7 @@ module.exports =
     value: true
   });
   
-  var _pg = __webpack_require__(122);
+  var _pg = __webpack_require__(126);
   
   var _pg2 = _interopRequireDefault(_pg);
   
@@ -2356,7 +2493,7 @@ module.exports =
   
   var _bluebird2 = _interopRequireDefault(_bluebird);
   
-  var _config = __webpack_require__(13);
+  var _config = __webpack_require__(14);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -2448,7 +2585,7 @@ module.exports =
   exports.default = _pg2.default;
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2465,17 +2602,17 @@ module.exports =
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
-  var _passport = __webpack_require__(120);
+  var _passport = __webpack_require__(124);
   
   var _passport2 = _interopRequireDefault(_passport);
   
-  var _passportFacebook = __webpack_require__(121);
+  var _passportFacebook = __webpack_require__(125);
   
-  var _db = __webpack_require__(38);
+  var _db = __webpack_require__(40);
   
   var _db2 = _interopRequireDefault(_db);
   
-  var _config = __webpack_require__(13);
+  var _config = __webpack_require__(14);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -2648,7 +2785,7 @@ module.exports =
   exports.default = _passport2.default;
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2669,7 +2806,7 @@ module.exports =
   
   var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
   
-  var _assign = __webpack_require__(22);
+  var _assign = __webpack_require__(23);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -2818,31 +2955,31 @@ module.exports =
     };
   }();
   
-  var _fs = __webpack_require__(24);
+  var _fs = __webpack_require__(25);
   
   var _fs2 = _interopRequireDefault(_fs);
   
-  var _path = __webpack_require__(25);
+  var _path = __webpack_require__(26);
   
   var _bluebird = __webpack_require__(18);
   
   var _bluebird2 = _interopRequireDefault(_bluebird);
   
-  var _jade = __webpack_require__(116);
+  var _jade = __webpack_require__(120);
   
   var _jade2 = _interopRequireDefault(_jade);
   
-  var _frontMatter = __webpack_require__(112);
+  var _frontMatter = __webpack_require__(116);
   
   var _frontMatter2 = _interopRequireDefault(_frontMatter);
   
-  var _markdownIt = __webpack_require__(118);
+  var _markdownIt = __webpack_require__(122);
   
   var _markdownIt2 = _interopRequireDefault(_markdownIt);
   
   var _graphql = __webpack_require__(7);
   
-  var _ContentType = __webpack_require__(44);
+  var _ContentType = __webpack_require__(46);
   
   var _ContentType2 = _interopRequireDefault(_ContentType);
   
@@ -2944,7 +3081,7 @@ module.exports =
   exports.default = content;
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2953,7 +3090,7 @@ module.exports =
     value: true
   });
   
-  var _UserType = __webpack_require__(46);
+  var _UserType = __webpack_require__(48);
   
   var _UserType2 = _interopRequireDefault(_UserType);
   
@@ -2981,7 +3118,7 @@ module.exports =
   exports.default = me;
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2996,7 +3133,7 @@ module.exports =
   
   var _fetch2 = _interopRequireDefault(_fetch);
   
-  var _NewsItemType = __webpack_require__(45);
+  var _NewsItemType = __webpack_require__(47);
   
   var _NewsItemType2 = _interopRequireDefault(_NewsItemType);
   
@@ -3051,7 +3188,7 @@ module.exports =
   exports.default = news;
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3062,15 +3199,15 @@ module.exports =
   
   var _graphql = __webpack_require__(7);
   
-  var _me = __webpack_require__(41);
+  var _me = __webpack_require__(43);
   
   var _me2 = _interopRequireDefault(_me);
   
-  var _content = __webpack_require__(40);
+  var _content = __webpack_require__(42);
   
   var _content2 = _interopRequireDefault(_content);
   
-  var _news = __webpack_require__(42);
+  var _news = __webpack_require__(44);
   
   var _news2 = _interopRequireDefault(_news);
   
@@ -3099,7 +3236,7 @@ module.exports =
   exports.default = schema;
 
 /***/ }),
-/* 44 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3130,7 +3267,7 @@ module.exports =
   exports.default = ContentType;
 
 /***/ }),
-/* 45 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3162,7 +3299,7 @@ module.exports =
   exports.default = NewsItemType;
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3191,7 +3328,7 @@ module.exports =
   exports.default = UserType;
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3212,7 +3349,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Router = __webpack_require__(28);
+  var _Router = __webpack_require__(29);
   
   var _Router2 = _interopRequireDefault(_Router);
   
@@ -3220,25 +3357,25 @@ module.exports =
   
   var _fetch2 = _interopRequireDefault(_fetch);
   
-  var _App = __webpack_require__(29);
+  var _App = __webpack_require__(30);
   
   var _App2 = _interopRequireDefault(_App);
   
-  var _ContentPage = __webpack_require__(30);
+  var _ContentPage = __webpack_require__(31);
   
   var _ContentPage2 = _interopRequireDefault(_ContentPage);
   
-  var _NotFoundPage = __webpack_require__(36);
+  var _NotFoundPage = __webpack_require__(38);
   
   var _NotFoundPage2 = _interopRequireDefault(_NotFoundPage);
   
-  var _ErrorPage = __webpack_require__(31);
+  var _ErrorPage = __webpack_require__(33);
   
   var _ErrorPage2 = _interopRequireDefault(_ErrorPage);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var routes = [__webpack_require__(51), __webpack_require__(49), __webpack_require__(53), __webpack_require__(55)]; /**
+  var routes = [__webpack_require__(53), __webpack_require__(51), __webpack_require__(55), __webpack_require__(57)]; /**
                                                                                                                                   * React Starter Kit (https://www.reactstarterkit.com/)
                                                                                                                                   *
                                                                                                                                   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
@@ -3334,7 +3471,7 @@ module.exports =
   exports.default = router;
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3351,7 +3488,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Contact = __webpack_require__(82);
+  var _Contact = __webpack_require__(86);
   
   var _Contact2 = _interopRequireDefault(_Contact);
   
@@ -3392,7 +3529,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(Contact, _Contact2.default);
 
 /***/ }),
-/* 49 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3414,7 +3551,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Contact = __webpack_require__(48);
+  var _Contact = __webpack_require__(50);
   
   var _Contact2 = _interopRequireDefault(_Contact);
   
@@ -3456,7 +3593,7 @@ module.exports =
   }();
 
 /***/ }),
-/* 50 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3473,17 +3610,30 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Home = __webpack_require__(83);
+  var _ContentSection = __webpack_require__(32);
+  
+  var _ContentSection2 = _interopRequireDefault(_ContentSection);
+  
+  var _Home = __webpack_require__(87);
   
   var _Home2 = _interopRequireDefault(_Home);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
+  /**
+   * React Starter Kit (https://www.reactstarterkit.com/)
+   *
+   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE.txt file in the root directory of this source tree.
+   */
+  
   function Home(_ref) {
     var news = _ref.news;
   
-    var contentLeft = { float: 'left' };
-    var contentRight = { float: 'right' };
+    var contentLeft = { float: 'left', height: 'auto', maxWidth: '100%' };
+    var contentRight = { float: 'right', height: 'auto', maxWidth: '100%' };
     return _react2.default.createElement(
       'div',
       { className: _Home2.default.root },
@@ -3497,14 +3647,8 @@ module.exports =
           _react2.default.createElement('img', { className: _Home2.default.image, src: 'https://placeimg.com/1000/480/nature' })
         ),
         _react2.default.createElement(
-          'div',
-          { className: _Home2.default.content },
-          _react2.default.createElement(
-            'h3',
-            { className: _Home2.default.contentHeader },
-            'Service'
-          ),
-          _react2.default.createElement('img', { style: contentLeft, src: 'https://placeimg.com/200/200/nature' }),
+          _ContentSection2.default,
+          { title: 'Service', imgSrc: __webpack_require__(22) },
           _react2.default.createElement(
             'p',
             null,
@@ -3514,17 +3658,11 @@ module.exports =
             'p',
             null,
             'Need to brighten up your business? I also offer my fully bespoke floral contract design service to any business who wishes to offer the beauty of flowers to their customers on a regular basis. I will work closely with each client to understand your individual floral needs.'
-          ),
-          _react2.default.createElement('img', { style: contentRight, src: 'https://placeimg.com/200/200/nature' })
+          )
         ),
         _react2.default.createElement(
-          'div',
-          { className: _Home2.default.content },
-          _react2.default.createElement(
-            'h3',
-            { className: _Home2.default.contentHeader },
-            'About'
-          ),
+          _ContentSection2.default,
+          { title: 'About', imgSrc: __webpack_require__(22), imagePostion: 'right' },
           _react2.default.createElement(
             'p',
             null,
@@ -3545,17 +3683,11 @@ module.exports =
             null,
             'I love: textural berries, trailing vines, twisted hazel and all things perfectly imperfect. Life is about balance\u2026. the tamed and the untamed and I find happiness in finding this balance in nature and my work.'
           )
-        )
+        ),
+        _react2.default.createElement('hr', null)
       )
     );
-  } /**
-     * React Starter Kit (https://www.reactstarterkit.com/)
-     *
-     * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-     *
-     * This source code is licensed under the MIT license found in the
-     * LICENSE.txt file in the root directory of this source tree.
-     */
+  }
   
   Home.propTypes = {
     news: _react.PropTypes.arrayOf(_react.PropTypes.shape({
@@ -3568,7 +3700,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(Home, _Home2.default);
 
 /***/ }),
-/* 51 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3590,7 +3722,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Home = __webpack_require__(50);
+  var _Home = __webpack_require__(52);
   
   var _Home2 = _interopRequireDefault(_Home);
   
@@ -3646,7 +3778,7 @@ module.exports =
   }();
 
 /***/ }),
-/* 52 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3663,7 +3795,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Login = __webpack_require__(84);
+  var _Login = __webpack_require__(88);
   
   var _Login2 = _interopRequireDefault(_Login);
   
@@ -3704,7 +3836,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(Login, _Login2.default);
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3726,7 +3858,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Login = __webpack_require__(52);
+  var _Login = __webpack_require__(54);
   
   var _Login2 = _interopRequireDefault(_Login);
   
@@ -3768,7 +3900,7 @@ module.exports =
   }();
 
 /***/ }),
-/* 54 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3785,7 +3917,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Register = __webpack_require__(85);
+  var _Register = __webpack_require__(89);
   
   var _Register2 = _interopRequireDefault(_Register);
   
@@ -3826,7 +3958,7 @@ module.exports =
   exports.default = (0, _withStyles2.default)(Register, _Register2.default);
 
 /***/ }),
-/* 55 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3848,7 +3980,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Register = __webpack_require__(54);
+  var _Register = __webpack_require__(56);
   
   var _Register2 = _interopRequireDefault(_Register);
   
@@ -3890,20 +4022,20 @@ module.exports =
   }();
 
 /***/ }),
-/* 56 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(106), __esModule: true };
+  module.exports = { "default": __webpack_require__(110), __esModule: true };
 
 /***/ }),
-/* 57 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _promise = __webpack_require__(23);
+  var _promise = __webpack_require__(24);
   
   var _promise2 = _interopRequireDefault(_promise);
   
@@ -3939,14 +4071,14 @@ module.exports =
   };
 
 /***/ }),
-/* 58 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _isIterable2 = __webpack_require__(92);
+  var _isIterable2 = __webpack_require__(96);
   
   var _isIterable3 = _interopRequireDefault(_isIterable2);
   
@@ -3995,7 +4127,7 @@ module.exports =
   }();
 
 /***/ }),
-/* 59 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
   // This method of obtaining a reference to the global object needs to be
@@ -4016,7 +4148,7 @@ module.exports =
   // Force reevalutation of runtime.js.
   g.regeneratorRuntime = undefined;
   
-  module.exports = __webpack_require__(60);
+  module.exports = __webpack_require__(62);
   
   if (hadRuntime) {
     // Restore the original runtime.
@@ -4034,32 +4166,32 @@ module.exports =
 
 
 /***/ }),
-/* 60 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
   /* WEBPACK VAR INJECTION */(function(module) {"use strict";
   
-  var _promise = __webpack_require__(23);
+  var _promise = __webpack_require__(24);
   
   var _promise2 = _interopRequireDefault(_promise);
   
-  var _setPrototypeOf = __webpack_require__(96);
+  var _setPrototypeOf = __webpack_require__(100);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(94);
+  var _create = __webpack_require__(98);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(102);
+  var _typeof2 = __webpack_require__(106);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
-  var _iterator = __webpack_require__(98);
+  var _iterator = __webpack_require__(102);
   
   var _iterator2 = _interopRequireDefault(_iterator);
   
-  var _symbol = __webpack_require__(97);
+  var _symbol = __webpack_require__(101);
   
   var _symbol2 = _interopRequireDefault(_symbol);
   
@@ -4689,38 +4821,7 @@ module.exports =
   // object, this seems to be the most reliable technique that does not
   // use indirect eval (which violates Content Security Policy).
   (typeof global === "undefined" ? "undefined" : (0, _typeof3.default)(global)) === "object" ? global : (typeof window === "undefined" ? "undefined" : (0, _typeof3.default)(window)) === "object" ? window : (typeof self === "undefined" ? "undefined" : (0, _typeof3.default)(self)) === "object" ? self : undefined);
-  /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(89)(module)))
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio, canvas, progress, video {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden], template {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active, a:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb, strong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode, kbd, pre, samp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton, input, optgroup, select, textarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton, select {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton, html input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled], html input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner, input::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"], input[type=\"radio\"] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button, input[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button, input[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd, th {\n  padding: 0;\n}\n\n/*! React Starter Kit | MIT License | https://www.reactstarterkit.com/ */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n/*\n * Base styles\n * ========================================================================== */\n\nhtml {\n  color: #222;\n  font-weight: 100;\n  font-size: 1em; /* ~16px; */\n  font-family: 'Segoe UI','HelveticaNeue-Light',sans-serif;\n  line-height: 1.375; /* ~22px */\n}\n\n/*\n * Remove text-shadow in selection highlight:\n * https://twitter.com/miketaylr/status/12228805301\n *\n * These selection rule sets have to be separate.\n * Customize the background color to match your design.\n */\n\n::-moz-selection {\n  background: #b3d4fc;\n  text-shadow: none;\n}\n\n::selection {\n  background: #b3d4fc;\n  text-shadow: none;\n}\n\n/*\n * A better looking default horizontal rule\n */\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\n\n/*\n * Remove the gap between audio, canvas, iframes,\n * images, videos and the bottom of their containers:\n * https://github.com/h5bp/html5-boilerplate/issues/440\n */\n\naudio, canvas, iframe, img, svg, video {\n  vertical-align: middle;\n}\n\n/*\n * Remove default fieldset styles.\n */\n\nfieldset {\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n\n/*\n * Allow only vertical resizing of textareas.\n */\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n * Browser upgrade prompt\n * ========================================================================== */\n\n.browserupgrade {\n  margin: 0.2em 0;\n  background: #ccc;\n  color: #000;\n  padding: 0.2em 0;\n}\n\n/*\n * Print styles\n * Inlined to avoid the additional HTTP request:\n * http://www.phpied.com/delay-loading-your-print-css/\n * ========================================================================== */\n\n@media print {\n  *, *:before, *:after {\n    background: transparent !important;\n    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */\n    -webkit-box-shadow: none !important;\n            box-shadow: none !important;\n    text-shadow: none !important;\n  }\n\n  a, a:visited {\n    text-decoration: underline;\n  }\n\n  a[href]:after {\n    content: \" (\" attr(href) \")\";\n  }\n\n  abbr[title]:after {\n    content: \" (\" attr(title) \")\";\n  }\n\n  /*\n   * Don't show links that are fragment identifiers,\n   * or use the `javascript:` pseudo protocol\n   */\n\n  a[href^=\"#\"]:after, a[href^=\"javascript:\"]:after {\n    content: \"\";\n  }\n\n  pre, blockquote {\n    border: 1px solid #999;\n    page-break-inside: avoid;\n  }\n\n  /*\n   * Printing Tables:\n   * http://css-discuss.incutio.com/wiki/Printing_Tables\n   */\n\n  thead {\n    display: table-header-group;\n  }\n\n  tr, img {\n    page-break-inside: avoid;\n  }\n\n  img {\n    max-width: 100% !important;\n  }\n\n  p, h2, h3 {\n    orphans: 3;\n    widows: 3;\n  }\n\n  h2, h3 {\n    page-break-after: avoid;\n  }\n}\n", "", {"version":3,"sources":["/./src/components/App/App.scss","/./node_modules/normalize.css/normalize.css","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH,4EAA4E;;AAE5E;;;;GAIG;;AAEH;EACE,wBAAwB,CAAC,OAAO;EAChC,2BAA2B,CAAC,OAAO;EACnC,+BAA+B,CAAC,OAAO;CACxC;;AAED;;GAEG;;AAEH;EACE,UAAU;CACX;;AAED;gFACgF;;AAEhF;;;;;GAKG;;AAEH;EAaE,eAAe;CAChB;;AAED;;;GAGG;;AAEH;EAIE,sBAAsB,CAAC,OAAO;EAC9B,yBAAyB,CAAC,OAAO;CAClC;;AAED;;;GAGG;;AAEH;EACE,cAAc;EACd,UAAU;CACX;;AAED;;;GAGG;;AAEH;EAEE,cAAc;CACf;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,8BAA8B;CAC/B;;AAED;;;GAGG;;AAEH;EAEE,WAAW;CACZ;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,0BAA0B;CAC3B;;AAED;;GAEG;;AAEH;EAEE,kBAAkB;CACnB;;AAED;;GAEG;;AAEH;EACE,mBAAmB;CACpB;;AAED;;;GAGG;;AAEH;EACE,eAAe;EACf,iBAAiB;CAClB;;AAED;;GAEG;;AAEH;EACE,iBAAiB;EACjB,YAAY;CACb;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;GAEG;;AAEH;EAEE,eAAe;EACf,eAAe;EACf,mBAAmB;EACnB,yBAAyB;CAC1B;;AAED;EACE,YAAY;CACb;;AAED;EACE,gBAAgB;CACjB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,UAAU;CACX;;AAED;;GAEG;;AAEH;EACE,iBAAiB;CAClB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,iBAAiB;CAClB;;AAED;;GAEG;;AAEH;EACE,gCAAwB;UAAxB,wBAAwB;EACxB,UAAU;CACX;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;GAEG;;AAEH;EAIE,kCAAkC;EAClC,eAAe;CAChB;;AAED;gFACgF;;AAEhF;;;GAGG;;AAEH;;;;;GAKG;;AAEH;EAKE,eAAe,CAAC,OAAO;EACvB,cAAc,CAAC,OAAO;EACtB,UAAU,CAAC,OAAO;CACnB;;AAED;;GAEG;;AAEH;EACE,kBAAkB;CACnB;;AAED;;;;;GAKG;;AAEH;EAEE,qBAAqB;CACtB;;AAED;;;;;;GAMG;;AAEH;EAIE,2BAA2B,CAAC,OAAO;EACnC,gBAAgB,CAAC,OAAO;CACzB;;AAED;;GAEG;;AAEH;EAEE,gBAAgB;CACjB;;AAED;;GAEG;;AAEH;EAEE,UAAU;EACV,WAAW;CACZ;;AAED;;;GAGG;;AAEH;EACE,oBAAoB;CACrB;;AAED;;;;;;GAMG;;AAEH;EAEE,+BAAuB;UAAvB,uBAAuB,CAAC,OAAO;EAC/B,WAAW,CAAC,OAAO;CACpB;;AAED;;;;GAIG;;AAEH;EAEE,aAAa;CACd;;AAED;;;GAGG;;AAEH;EACE,8BAA8B,CAAC,OAAO;EACtC,gCAAwB;UAAxB,wBAAwB,CAAC,OAAO;CACjC;;AAED;;;;GAIG;;AAEH;EAEE,yBAAyB;CAC1B;;AAED;;GAEG;;AAEH;EACE,0BAA0B;EAC1B,cAAc;EACd,+BAA+B;CAChC;;AAED;;;GAGG;;AAEH;EACE,UAAU,CAAC,OAAO;EAClB,WAAW,CAAC,OAAO;CACpB;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;;GAGG;;AAEH;EACE,kBAAkB;CACnB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,0BAA0B;EAC1B,kBAAkB;CACnB;;AAED;EAEE,WAAW;CACZ;;AD5ZD,yEAAyE;;AEXzE;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;AF/BhF;;gFAEgF;;AAEhF;EACE,YAAY;EACZ,iBAAiB;EACjB,eAAe,CAAC,YAAY;EAC5B,yDAA+B;EAC/B,mBAAmB,CAAC,WAAW;CAChC;;AAED;;;;;;GAMG;;AAEH;EACE,oBAAoB;EACpB,kBAAkB;CACnB;;AAED;EACE,oBAAoB;EACpB,kBAAkB;CACnB;;AAED;;GAEG;;AAEH;EACE,eAAe;EACf,YAAY;EACZ,UAAU;EACV,2BAA2B;EAC3B,cAAc;EACd,WAAW;CACZ;;AAED;;;;GAIG;;AAEH;EAME,uBAAuB;CACxB;;AAED;;GAEG;;AAEH;EACE,UAAU;EACV,UAAU;EACV,WAAW;CACZ;;AAED;;GAEG;;AAEH;EACE,iBAAiB;CAClB;;AAED;;gFAEgF;;AAEhF;EACE,gBAAgB;EAChB,iBAAiB;EACjB,YAAY;EACZ,iBAAiB;CAClB;;AAED;;;;gFAIgF;;AAEhF;EACE;IAGE,mCAAmC;IACnC,uBAAuB,CAAC,+DAA+D;IACvF,oCAA4B;YAA5B,4BAA4B;IAC5B,6BAA6B;GAC9B;;EAED;IAEE,2BAA2B;GAC5B;;EAED;IACE,6BAA6B;GAC9B;;EAED;IACE,8BAA8B;GAC/B;;EAED;;;KAGG;;EAEH;IAEE,YAAY;GACb;;EAED;IAEE,uBAAuB;IACvB,yBAAyB;GAC1B;;EAED;;;KAGG;;EAEH;IACE,4BAA4B;GAC7B;;EAED;IAEE,yBAAyB;GAC1B;;EAED;IACE,2BAA2B;GAC5B;;EAED;IAGE,WAAW;IACX,UAAU;GACX;;EAED;IAEE,wBAAwB;GACzB;CACF","file":"App.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../../node_modules/normalize.css/normalize.css';\n\n/*! React Starter Kit | MIT License | https://www.reactstarterkit.com/ */\n\n@import '../variables.scss';\n\n/*\n * Base styles\n * ========================================================================== */\n\nhtml {\n  color: #222;\n  font-weight: 100;\n  font-size: 1em; /* ~16px; */\n  font-family: $font-family-base;\n  line-height: 1.375; /* ~22px */\n}\n\n/*\n * Remove text-shadow in selection highlight:\n * https://twitter.com/miketaylr/status/12228805301\n *\n * These selection rule sets have to be separate.\n * Customize the background color to match your design.\n */\n\n::-moz-selection {\n  background: #b3d4fc;\n  text-shadow: none;\n}\n\n::selection {\n  background: #b3d4fc;\n  text-shadow: none;\n}\n\n/*\n * A better looking default horizontal rule\n */\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\n\n/*\n * Remove the gap between audio, canvas, iframes,\n * images, videos and the bottom of their containers:\n * https://github.com/h5bp/html5-boilerplate/issues/440\n */\n\naudio,\ncanvas,\niframe,\nimg,\nsvg,\nvideo {\n  vertical-align: middle;\n}\n\n/*\n * Remove default fieldset styles.\n */\n\nfieldset {\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n\n/*\n * Allow only vertical resizing of textareas.\n */\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n * Browser upgrade prompt\n * ========================================================================== */\n\n:global(.browserupgrade) {\n  margin: 0.2em 0;\n  background: #ccc;\n  color: #000;\n  padding: 0.2em 0;\n}\n\n/*\n * Print styles\n * Inlined to avoid the additional HTTP request:\n * http://www.phpied.com/delay-loading-your-print-css/\n * ========================================================================== */\n\n@media print {\n  *,\n  *:before,\n  *:after {\n    background: transparent !important;\n    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */\n    box-shadow: none !important;\n    text-shadow: none !important;\n  }\n\n  a,\n  a:visited {\n    text-decoration: underline;\n  }\n\n  a[href]:after {\n    content: \" (\" attr(href) \")\";\n  }\n\n  abbr[title]:after {\n    content: \" (\" attr(title) \")\";\n  }\n\n  /*\n   * Don't show links that are fragment identifiers,\n   * or use the `javascript:` pseudo protocol\n   */\n\n  a[href^=\"#\"]:after,\n  a[href^=\"javascript:\"]:after {\n    content: \"\";\n  }\n\n  pre,\n  blockquote {\n    border: 1px solid #999;\n    page-break-inside: avoid;\n  }\n\n  /*\n   * Printing Tables:\n   * http://css-discuss.incutio.com/wiki/Printing_Tables\n   */\n\n  thead {\n    display: table-header-group;\n  }\n\n  tr,\n  img {\n    page-break-inside: avoid;\n  }\n\n  img {\n    max-width: 100% !important;\n  }\n\n  p,\n  h2,\n  h3 {\n    orphans: 3;\n    widows: 3;\n  }\n\n  h2,\n  h3 {\n    page-break-after: avoid;\n  }\n}\n","/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden],\ntemplate {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active,\na:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb,\nstrong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton,\nhtml input[type=\"button\"], /* 1 */\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd,\nth {\n  padding: 0;\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.ContentPage_root_9Fj {\n\n}\n\n.ContentPage_container_2WS {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./src/components/ContentPage/ContentPage.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADnChF;;CAEC;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;CAC/B","file":"ContentPage.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n.root {\n\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: $max-content-width;\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"root": "ContentPage_root_9Fj",
-  	"container": "ContentPage_container_2WS"
-  };
+  /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(93)(module)))
 
 /***/ }),
 /* 63 */
@@ -4731,7 +4832,7 @@ module.exports =
   
   
   // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n* {\n  margin: 0;\n  line-height: 1.2;\n}\n\nhtml {\n  display: table;\n  width: 100%;\n  height: 100%;\n  color: #888;\n  text-align: center;\n  font-family: sans-serif;\n}\n\nbody {\n  display: table-cell;\n  margin: 2em auto;\n  vertical-align: middle;\n}\n\nh1 {\n  color: #555;\n  font-weight: 400;\n  font-size: 2em;\n}\n\np {\n  margin: 0 auto;\n  width: 280px;\n}\n\n@media only screen and (max-width: 280px) {\n\n  body, p {\n    width: 95%;\n  }\n\n  h1 {\n    font-size: 1.5em;\n    margin: 0 0 0.3em;\n\n  }\n\n}\n", "", {"version":3,"sources":["/./src/components/ErrorPage/ErrorPage.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;EACE,UAAU;EACV,iBAAiB;CAClB;;AAED;EACE,eAAe;EACf,YAAY;EACZ,aAAa;EACb,YAAY;EACZ,mBAAmB;EACnB,wBAAwB;CACzB;;AAED;EACE,oBAAoB;EACpB,iBAAiB;EACjB,uBAAuB;CACxB;;AAED;EACE,YAAY;EACZ,iBAAiB;EACjB,eAAe;CAChB;;AAED;EACE,eAAe;EACf,aAAa;CACd;;AAED;;EAEE;IACE,WAAW;GACZ;;EAED;IACE,iBAAiB;IACjB,kBAAkB;;GAEnB;;CAEF","file":"ErrorPage.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n* {\n  margin: 0;\n  line-height: 1.2;\n}\n\nhtml {\n  display: table;\n  width: 100%;\n  height: 100%;\n  color: #888;\n  text-align: center;\n  font-family: sans-serif;\n}\n\nbody {\n  display: table-cell;\n  margin: 2em auto;\n  vertical-align: middle;\n}\n\nh1 {\n  color: #555;\n  font-weight: 400;\n  font-size: 2em;\n}\n\np {\n  margin: 0 auto;\n  width: 280px;\n}\n\n@media only screen and (max-width: 280px) {\n\n  body, p {\n    width: 95%;\n  }\n\n  h1 {\n    font-size: 1.5em;\n    margin: 0 0 0.3em;\n\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio, canvas, progress, video {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden], template {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active, a:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb, strong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode, kbd, pre, samp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton, input, optgroup, select, textarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton, select {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton, html input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled], html input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner, input::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"], input[type=\"radio\"] {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button, input[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button, input[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd, th {\n  padding: 0;\n}\n\n/*! React Starter Kit | MIT License | https://www.reactstarterkit.com/ */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n/*\n * Base styles\n * ========================================================================== */\n\nhtml {\n  color: #222;\n  font-weight: 100;\n  font-size: 1em; /* ~16px; */\n  font-family: 'Segoe UI','HelveticaNeue-Light',sans-serif;\n  line-height: 1.375; /* ~22px */\n}\n\n/*\n * Remove text-shadow in selection highlight:\n * https://twitter.com/miketaylr/status/12228805301\n *\n * These selection rule sets have to be separate.\n * Customize the background color to match your design.\n */\n\n::-moz-selection {\n  background: #b3d4fc;\n  text-shadow: none;\n}\n\n::selection {\n  background: #b3d4fc;\n  text-shadow: none;\n}\n\n/*\n * A better looking default horizontal rule\n */\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\n\n/*\n * Remove the gap between audio, canvas, iframes,\n * images, videos and the bottom of their containers:\n * https://github.com/h5bp/html5-boilerplate/issues/440\n */\n\naudio, canvas, iframe, img, svg, video {\n  vertical-align: middle;\n}\n\n/*\n * Remove default fieldset styles.\n */\n\nfieldset {\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n\n/*\n * Allow only vertical resizing of textareas.\n */\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n * Browser upgrade prompt\n * ========================================================================== */\n\n.browserupgrade {\n  margin: 0.2em 0;\n  background: #ccc;\n  color: #000;\n  padding: 0.2em 0;\n}\n\n/*\n * Print styles\n * Inlined to avoid the additional HTTP request:\n * http://www.phpied.com/delay-loading-your-print-css/\n * ========================================================================== */\n\n@media print {\n  *, *:before, *:after {\n    background: transparent !important;\n    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */\n    -webkit-box-shadow: none !important;\n            box-shadow: none !important;\n    text-shadow: none !important;\n  }\n\n  a, a:visited {\n    text-decoration: underline;\n  }\n\n  a[href]:after {\n    content: \" (\" attr(href) \")\";\n  }\n\n  abbr[title]:after {\n    content: \" (\" attr(title) \")\";\n  }\n\n  /*\n   * Don't show links that are fragment identifiers,\n   * or use the `javascript:` pseudo protocol\n   */\n\n  a[href^=\"#\"]:after, a[href^=\"javascript:\"]:after {\n    content: \"\";\n  }\n\n  pre, blockquote {\n    border: 1px solid #999;\n    page-break-inside: avoid;\n  }\n\n  /*\n   * Printing Tables:\n   * http://css-discuss.incutio.com/wiki/Printing_Tables\n   */\n\n  thead {\n    display: table-header-group;\n  }\n\n  tr, img {\n    page-break-inside: avoid;\n  }\n\n  img {\n    max-width: 100% !important;\n  }\n\n  p, h2, h3 {\n    orphans: 3;\n    widows: 3;\n  }\n\n  h2, h3 {\n    page-break-after: avoid;\n  }\n}\n", "", {"version":3,"sources":["/./src/components/App/App.scss","/./node_modules/normalize.css/normalize.css","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH,4EAA4E;;AAE5E;;;;GAIG;;AAEH;EACE,wBAAwB,CAAC,OAAO;EAChC,2BAA2B,CAAC,OAAO;EACnC,+BAA+B,CAAC,OAAO;CACxC;;AAED;;GAEG;;AAEH;EACE,UAAU;CACX;;AAED;gFACgF;;AAEhF;;;;;GAKG;;AAEH;EAaE,eAAe;CAChB;;AAED;;;GAGG;;AAEH;EAIE,sBAAsB,CAAC,OAAO;EAC9B,yBAAyB,CAAC,OAAO;CAClC;;AAED;;;GAGG;;AAEH;EACE,cAAc;EACd,UAAU;CACX;;AAED;;;GAGG;;AAEH;EAEE,cAAc;CACf;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,8BAA8B;CAC/B;;AAED;;;GAGG;;AAEH;EAEE,WAAW;CACZ;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,0BAA0B;CAC3B;;AAED;;GAEG;;AAEH;EAEE,kBAAkB;CACnB;;AAED;;GAEG;;AAEH;EACE,mBAAmB;CACpB;;AAED;;;GAGG;;AAEH;EACE,eAAe;EACf,iBAAiB;CAClB;;AAED;;GAEG;;AAEH;EACE,iBAAiB;EACjB,YAAY;CACb;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;GAEG;;AAEH;EAEE,eAAe;EACf,eAAe;EACf,mBAAmB;EACnB,yBAAyB;CAC1B;;AAED;EACE,YAAY;CACb;;AAED;EACE,gBAAgB;CACjB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,UAAU;CACX;;AAED;;GAEG;;AAEH;EACE,iBAAiB;CAClB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,iBAAiB;CAClB;;AAED;;GAEG;;AAEH;EACE,gCAAwB;UAAxB,wBAAwB;EACxB,UAAU;CACX;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;GAEG;;AAEH;EAIE,kCAAkC;EAClC,eAAe;CAChB;;AAED;gFACgF;;AAEhF;;;GAGG;;AAEH;;;;;GAKG;;AAEH;EAKE,eAAe,CAAC,OAAO;EACvB,cAAc,CAAC,OAAO;EACtB,UAAU,CAAC,OAAO;CACnB;;AAED;;GAEG;;AAEH;EACE,kBAAkB;CACnB;;AAED;;;;;GAKG;;AAEH;EAEE,qBAAqB;CACtB;;AAED;;;;;;GAMG;;AAEH;EAIE,2BAA2B,CAAC,OAAO;EACnC,gBAAgB,CAAC,OAAO;CACzB;;AAED;;GAEG;;AAEH;EAEE,gBAAgB;CACjB;;AAED;;GAEG;;AAEH;EAEE,UAAU;EACV,WAAW;CACZ;;AAED;;;GAGG;;AAEH;EACE,oBAAoB;CACrB;;AAED;;;;;;GAMG;;AAEH;EAEE,+BAAuB;UAAvB,uBAAuB,CAAC,OAAO;EAC/B,WAAW,CAAC,OAAO;CACpB;;AAED;;;;GAIG;;AAEH;EAEE,aAAa;CACd;;AAED;;;GAGG;;AAEH;EACE,8BAA8B,CAAC,OAAO;EACtC,gCAAwB;UAAxB,wBAAwB,CAAC,OAAO;CACjC;;AAED;;;;GAIG;;AAEH;EAEE,yBAAyB;CAC1B;;AAED;;GAEG;;AAEH;EACE,0BAA0B;EAC1B,cAAc;EACd,+BAA+B;CAChC;;AAED;;;GAGG;;AAEH;EACE,UAAU,CAAC,OAAO;EAClB,WAAW,CAAC,OAAO;CACpB;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;;GAGG;;AAEH;EACE,kBAAkB;CACnB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,0BAA0B;EAC1B,kBAAkB;CACnB;;AAED;EAEE,WAAW;CACZ;;AD5ZD,yEAAyE;;AEXzE;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;AFnBhF;;gFAEgF;;AAEhF;EACE,YAAY;EACZ,iBAAiB;EACjB,eAAe,CAAC,YAAY;EAC5B,yDAA+B;EAC/B,mBAAmB,CAAC,WAAW;CAChC;;AAED;;;;;;GAMG;;AAEH;EACE,oBAAoB;EACpB,kBAAkB;CACnB;;AAED;EACE,oBAAoB;EACpB,kBAAkB;CACnB;;AAED;;GAEG;;AAEH;EACE,eAAe;EACf,YAAY;EACZ,UAAU;EACV,2BAA2B;EAC3B,cAAc;EACd,WAAW;CACZ;;AAED;;;;GAIG;;AAEH;EAME,uBAAuB;CACxB;;AAED;;GAEG;;AAEH;EACE,UAAU;EACV,UAAU;EACV,WAAW;CACZ;;AAED;;GAEG;;AAEH;EACE,iBAAiB;CAClB;;AAED;;gFAEgF;;AAEhF;EACE,gBAAgB;EAChB,iBAAiB;EACjB,YAAY;EACZ,iBAAiB;CAClB;;AAED;;;;gFAIgF;;AAEhF;EACE;IAGE,mCAAmC;IACnC,uBAAuB,CAAC,+DAA+D;IACvF,oCAA4B;YAA5B,4BAA4B;IAC5B,6BAA6B;GAC9B;;EAED;IAEE,2BAA2B;GAC5B;;EAED;IACE,6BAA6B;GAC9B;;EAED;IACE,8BAA8B;GAC/B;;EAED;;;KAGG;;EAEH;IAEE,YAAY;GACb;;EAED;IAEE,uBAAuB;IACvB,yBAAyB;GAC1B;;EAED;;;KAGG;;EAEH;IACE,4BAA4B;GAC7B;;EAED;IAEE,yBAAyB;GAC1B;;EAED;IACE,2BAA2B;GAC5B;;EAED;IAGE,WAAW;IACX,UAAU;GACX;;EAED;IAEE,wBAAwB;GACzB;CACF","file":"App.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../../node_modules/normalize.css/normalize.css';\n\n/*! React Starter Kit | MIT License | https://www.reactstarterkit.com/ */\n\n@import '../variables.scss';\n\n/*\n * Base styles\n * ========================================================================== */\n\nhtml {\n  color: #222;\n  font-weight: 100;\n  font-size: 1em; /* ~16px; */\n  font-family: $font-family-base;\n  line-height: 1.375; /* ~22px */\n}\n\n/*\n * Remove text-shadow in selection highlight:\n * https://twitter.com/miketaylr/status/12228805301\n *\n * These selection rule sets have to be separate.\n * Customize the background color to match your design.\n */\n\n::-moz-selection {\n  background: #b3d4fc;\n  text-shadow: none;\n}\n\n::selection {\n  background: #b3d4fc;\n  text-shadow: none;\n}\n\n/*\n * A better looking default horizontal rule\n */\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\n\n/*\n * Remove the gap between audio, canvas, iframes,\n * images, videos and the bottom of their containers:\n * https://github.com/h5bp/html5-boilerplate/issues/440\n */\n\naudio,\ncanvas,\niframe,\nimg,\nsvg,\nvideo {\n  vertical-align: middle;\n}\n\n/*\n * Remove default fieldset styles.\n */\n\nfieldset {\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n\n/*\n * Allow only vertical resizing of textareas.\n */\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n * Browser upgrade prompt\n * ========================================================================== */\n\n:global(.browserupgrade) {\n  margin: 0.2em 0;\n  background: #ccc;\n  color: #000;\n  padding: 0.2em 0;\n}\n\n/*\n * Print styles\n * Inlined to avoid the additional HTTP request:\n * http://www.phpied.com/delay-loading-your-print-css/\n * ========================================================================== */\n\n@media print {\n  *,\n  *:before,\n  *:after {\n    background: transparent !important;\n    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */\n    box-shadow: none !important;\n    text-shadow: none !important;\n  }\n\n  a,\n  a:visited {\n    text-decoration: underline;\n  }\n\n  a[href]:after {\n    content: \" (\" attr(href) \")\";\n  }\n\n  abbr[title]:after {\n    content: \" (\" attr(title) \")\";\n  }\n\n  /*\n   * Don't show links that are fragment identifiers,\n   * or use the `javascript:` pseudo protocol\n   */\n\n  a[href^=\"#\"]:after,\n  a[href^=\"javascript:\"]:after {\n    content: \"\";\n  }\n\n  pre,\n  blockquote {\n    border: 1px solid #999;\n    page-break-inside: avoid;\n  }\n\n  /*\n   * Printing Tables:\n   * http://css-discuss.incutio.com/wiki/Printing_Tables\n   */\n\n  thead {\n    display: table-header-group;\n  }\n\n  tr,\n  img {\n    page-break-inside: avoid;\n  }\n\n  img {\n    max-width: 100% !important;\n  }\n\n  p,\n  h2,\n  h3 {\n    orphans: 3;\n    widows: 3;\n  }\n\n  h2,\n  h3 {\n    page-break-after: avoid;\n  }\n}\n","/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden],\ntemplate {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active,\na:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb,\nstrong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton,\nhtml input[type=\"button\"], /* 1 */\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd,\nth {\n  padding: 0;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
   
   // exports
 
@@ -4745,14 +4846,12 @@ module.exports =
   
   
   // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Feedback_root_BQQ {\n  background: #f5f5f5;\n  color: #333;\n}\n\n.Feedback_container_Te7 {\n  margin: 0 auto;\n  padding: 20px 8px;\n  max-width: 1000px;\n  text-align: center;\n  font-size: 1.5em; /* ~24px */\n}\n\n.Feedback_link_1_D, .Feedback_link_1_D:active, .Feedback_link_1_D:hover, .Feedback_link_1_D:visited {\n  color: #333;\n  text-decoration: none;\n}\n\n.Feedback_link_1_D:hover {\n  text-decoration: underline;\n}\n\n.Feedback_spacer_39X {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n", "", {"version":3,"sources":["/./src/components/Feedback/Feedback.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADnChF;EACE,oBAAoB;EACpB,YAAY;CACb;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;EAC9B,mBAAmB;EACnB,iBAAiB,CAAC,WAAW;CAC9B;;AAED;EAIE,YAAY;EACZ,sBAAsB;CACvB;;AAED;EACE,2BAA2B;CAC5B;;AAED;EACE,oBAAoB;EACpB,mBAAmB;CACpB","file":"Feedback.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n.root {\n  background: #f5f5f5;\n  color: #333;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 20px 8px;\n  max-width: $max-content-width;\n  text-align: center;\n  font-size: 1.5em; /* ~24px */\n}\n\n.link,\n.link:active,\n.link:hover,\n.link:visited {\n  color: #333;\n  text-decoration: none;\n}\n\n.link:hover {\n  text-decoration: underline;\n}\n\n.spacer {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.ContentPage_root_9Fj {\n\n}\n\n.ContentPage_container_2WS {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./src/components/ContentPage/ContentPage.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADvBhF;;CAEC;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;CAC/B","file":"ContentPage.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n.root {\n\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: $max-content-width;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
-  	"root": "Feedback_root_BQQ",
-  	"container": "Feedback_container_Te7",
-  	"link": "Feedback_link_1_D",
-  	"spacer": "Feedback_spacer_39X"
+  	"root": "ContentPage_root_9Fj",
+  	"container": "ContentPage_container_2WS"
   };
 
 /***/ }),
@@ -4764,7 +4863,63 @@ module.exports =
   
   
   // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Footer_root_2bW {\n  background: #333;\n  color: #fff;\n}\n\n.Footer_container_2UR {\n  margin: 0 auto;\n  padding: 20px 15px;\n  max-width: 1000px;\n  text-align: center;\n}\n\n.Footer_text_3NI {\n  color: rgba(255, 255, 255, .5);\n}\n\n.Footer_textMuted_1Me {\n  color: rgba(255, 255, 255, .3);\n}\n\n.Footer_spacer_22t {\n  color: rgba(255, 255, 255, .3);\n}\n\n.Footer_text_3NI, .Footer_link_wim {\n  padding: 2px 5px;\n  font-size: 1em;\n}\n\n.Footer_link_wim, .Footer_link_wim:active, .Footer_link_wim:visited {\n  color: rgba(255, 255, 255, .6);\n  text-decoration: none;\n}\n\n.Footer_link_wim:hover {\n  color: rgba(255, 255, 255, 1);\n}\n", "", {"version":3,"sources":["/./src/components/Footer/Footer.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADnChF;EACE,iBAAiB;EACjB,YAAY;CACb;;AAED;EACE,eAAe;EACf,mBAAmB;EACnB,kBAA8B;EAC9B,mBAAmB;CACpB;;AAED;EACE,+BAA+B;CAChC;;AAED;EAEE,+BAA+B;CAChC;;AAED;EACE,+BAA+B;CAChC;;AAED;EAEE,iBAAiB;EACjB,eAAe;CAChB;;AAED;EAGE,+BAA+B;EAC/B,sBAAsB;CACvB;;AAED;EACE,8BAA8B;CAC/B","file":"Footer.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n.root {\n  background: #333;\n  color: #fff;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 20px 15px;\n  max-width: $max-content-width;\n  text-align: center;\n}\n\n.text {\n  color: rgba(255, 255, 255, .5);\n}\n\n.textMuted {\n  composes: text;\n  color: rgba(255, 255, 255, .3);\n}\n\n.spacer {\n  color: rgba(255, 255, 255, .3);\n}\n\n.text,\n.link {\n  padding: 2px 5px;\n  font-size: 1em;\n}\n\n.link,\n.link:active,\n.link:visited {\n  color: rgba(255, 255, 255, .6);\n  text-decoration: none;\n}\n\n.link:hover {\n  color: rgba(255, 255, 255, 1);\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.ContentSection_root_oKB {\n  position: relative;\n}\n\n.ContentSection_root_oKB:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\nh3 {\n  font-family: 'Fredericka the Great', cursive;\n  text-decoration: underline;\n  font-size: 1.5em;\n  font-weight: 300;\n}\n\n.ContentSection_imageWrapperLeft_28I {\n  width: 30%;\n  margin: 5px 5px;\n  float: left;\n}\n\n.ContentSection_imageWrapperRight_3t6 {\n  width: 30%;\n  margin: 5px 5px;\n  float: right;\n}\n\n.ContentSection_image_1-h {\n  max-width: 100%;\n  height: auto;\n}\n\n.ContentSection_contentWrapper_2RC {\n  font-family: 'Josefin Slab', serif;\n  font-size: 1.2em;\n}\n", "", {"version":3,"sources":["/./src/components/ContentSection/ContentSection.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADvBhF;EACE,mBAAmB;CACpB;;AAED;EACE,YAAY;EACZ,eAAe;EACf,YAAY;CACb;;AAED;EACE,6CAA6C;EAC7C,2BAA2B;EAC3B,iBAAiB;EACjB,iBAAiB;CAClB;;AAED;EACE,WAAW;EACX,gBAAgB;EAChB,YAAY;CACb;;AAED;EACE,WAAW;EACX,gBAAgB;EAChB,aAAa;CACd;;AAED;EACE,gBAAgB;EAChB,aAAa;CACd;;AAED;EACE,mCAAmC;EACnC,iBAAiB;CAClB","file":"ContentSection.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n.root {\n  position: relative;\n}\n\n.root:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\nh3 {\n  font-family: 'Fredericka the Great', cursive;\n  text-decoration: underline;\n  font-size: 1.5em;\n  font-weight: 300;\n}\n\n.imageWrapperLeft {\n  width: 30%;\n  margin: 5px 5px;\n  float: left;\n}\n\n.imageWrapperRight {\n  width: 30%;\n  margin: 5px 5px;\n  float: right;\n}\n\n.image {\n  max-width: 100%;\n  height: auto;\n}\n\n.contentWrapper {\n  font-family: 'Josefin Slab', serif;\n  font-size: 1.2em;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  
+  // exports
+  exports.locals = {
+  	"root": "ContentSection_root_oKB",
+  	"imageWrapperLeft": "ContentSection_imageWrapperLeft_28I",
+  	"imageWrapperRight": "ContentSection_imageWrapperRight_3t6",
+  	"image": "ContentSection_image_1-h",
+  	"contentWrapper": "ContentSection_contentWrapper_2RC"
+  };
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+  
+  
+  // module
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n* {\n  margin: 0;\n  line-height: 1.2;\n}\n\nhtml {\n  display: table;\n  width: 100%;\n  height: 100%;\n  color: #888;\n  text-align: center;\n  font-family: sans-serif;\n}\n\nbody {\n  display: table-cell;\n  margin: 2em auto;\n  vertical-align: middle;\n}\n\nh1 {\n  color: #555;\n  font-weight: 400;\n  font-size: 2em;\n}\n\np {\n  margin: 0 auto;\n  width: 280px;\n}\n\n@media only screen and (max-width: 280px) {\n\n  body, p {\n    width: 95%;\n  }\n\n  h1 {\n    font-size: 1.5em;\n    margin: 0 0 0.3em;\n\n  }\n\n}\n", "", {"version":3,"sources":["/./src/components/ErrorPage/ErrorPage.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;EACE,UAAU;EACV,iBAAiB;CAClB;;AAED;EACE,eAAe;EACf,YAAY;EACZ,aAAa;EACb,YAAY;EACZ,mBAAmB;EACnB,wBAAwB;CACzB;;AAED;EACE,oBAAoB;EACpB,iBAAiB;EACjB,uBAAuB;CACxB;;AAED;EACE,YAAY;EACZ,iBAAiB;EACjB,eAAe;CAChB;;AAED;EACE,eAAe;EACf,aAAa;CACd;;AAED;;EAEE;IACE,WAAW;GACZ;;EAED;IACE,iBAAiB;IACjB,kBAAkB;;GAEnB;;CAEF","file":"ErrorPage.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n* {\n  margin: 0;\n  line-height: 1.2;\n}\n\nhtml {\n  display: table;\n  width: 100%;\n  height: 100%;\n  color: #888;\n  text-align: center;\n  font-family: sans-serif;\n}\n\nbody {\n  display: table-cell;\n  margin: 2em auto;\n  vertical-align: middle;\n}\n\nh1 {\n  color: #555;\n  font-weight: 400;\n  font-size: 2em;\n}\n\np {\n  margin: 0 auto;\n  width: 280px;\n}\n\n@media only screen and (max-width: 280px) {\n\n  body, p {\n    width: 95%;\n  }\n\n  h1 {\n    font-size: 1.5em;\n    margin: 0 0 0.3em;\n\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
+  
+  // exports
+
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+  
+  
+  // module
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Feedback_root_BQQ {\n  font-family: 'Josefin Slab', serif;\n}\n\n.Feedback_container_Te7 {\n  margin: 0 auto;\n  padding: 20px 8px;\n  max-width: 1000px;\n  text-align: center;\n  font-size: 1.5em; /* ~24px */\n}\n\n.Feedback_link_1_D, .Feedback_link_1_D:active, .Feedback_link_1_D:hover, .Feedback_link_1_D:visited {\n  color: #333;\n  text-decoration: none;\n}\n\n.Feedback_contactMe_2ak {\n  margin: 0;\n}\n\n.Feedback_contactDetailsWrapper_ePo {\n  width: 250px;\n  margin: auto;\n  padding: 10px;\n}\n\n.Feedback_contactDetails_1cI {\n  margin: 5px 0;\n  text-align: justify;\n}\n\n.Feedback_contactDetails_1cI dt {\n  display: inline;\n  margin: 0;\n  padding: 0;\n}\n\n.Feedback_contactDetails_1cI dt:before {\n  content: \"\";\n  display: block;\n}\n\n.Feedback_contactDetails_1cI dd {\n  margin: 0;\n  padding: 0;\n  padding-left: 20px;\n  display: inline;\n}\n\n.Feedback_link_1_D:hover {\n  text-decoration: underline;\n}\n\n.Feedback_spacer_39X {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n", "", {"version":3,"sources":["/./src/components/Feedback/Feedback.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADvBhF;EACE,mCAAmC;CACpC;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;EAC9B,mBAAmB;EACnB,iBAAiB,CAAC,WAAW;CAC9B;;AAED;EACE,YAAY;EACZ,sBAAsB;CACvB;;AAED;EACE,UAAU;CACX;;AAED;EACE,aAAa;EACb,aAAa;EACb,cAAc;CACf;;AAED;EACE,cAAc;EACd,oBAAoB;CAgBrB;;AAfC;EACE,gBAAgB;EAChB,UAAU;EACV,WAAW;CACZ;;AACD;EACE,YAAY;EACZ,eAAe;CAChB;;AACD;EACE,UAAU;EACV,WAAW;EACX,mBAAmB;EACnB,gBAAgB;CACjB;;AAGH;EACE,2BAA2B;CAC5B;;AAED;EACE,oBAAoB;EACpB,mBAAmB;CACpB","file":"Feedback.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n.root {\n  font-family: 'Josefin Slab', serif;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 20px 8px;\n  max-width: $max-content-width;\n  text-align: center;\n  font-size: 1.5em; /* ~24px */\n}\n\n.link, .link:active, .link:hover, .link:visited {\n  color: #333;\n  text-decoration: none;\n}\n\n.contactMe {\n  margin: 0;\n}\n\n.contactDetailsWrapper {\n  width: 250px;\n  margin: auto;\n  padding: 10px;\n}\n\n.contactDetails {\n  margin: 5px 0;\n  text-align: justify;\n  dt {\n    display: inline;\n    margin: 0;\n    padding: 0;\n  }\n  dt:before {\n    content: \"\";\n    display: block;\n  }\n  dd {\n    margin: 0;\n    padding: 0;\n    padding-left: 20px;\n    display: inline;\n  }\n}\n\n.link:hover {\n  text-decoration: underline;\n}\n\n.spacer {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  
+  // exports
+  exports.locals = {
+  	"root": "Feedback_root_BQQ",
+  	"container": "Feedback_container_Te7",
+  	"link": "Feedback_link_1_D",
+  	"contactMe": "Feedback_contactMe_2ak",
+  	"contactDetailsWrapper": "Feedback_contactDetailsWrapper_ePo",
+  	"contactDetails": "Feedback_contactDetails_1cI",
+  	"spacer": "Feedback_spacer_39X"
+  };
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+  
+  
+  // module
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Footer_root_2bW {\n  background: #333;\n  color: #fff;\n}\n\n.Footer_container_2UR {\n  margin: 0 auto;\n  padding: 20px 15px;\n  max-width: 1000px;\n  text-align: center;\n}\n\n.Footer_text_3NI {\n  color: rgba(255, 255, 255, .5);\n}\n\n.Footer_textMuted_1Me {\n  color: rgba(255, 255, 255, .3);\n}\n\n.Footer_spacer_22t {\n  color: rgba(255, 255, 255, .3);\n}\n\n.Footer_text_3NI, .Footer_link_wim {\n  padding: 2px 5px;\n  font-size: 1em;\n}\n\n.Footer_link_wim, .Footer_link_wim:active, .Footer_link_wim:visited {\n  color: rgba(255, 255, 255, .6);\n  text-decoration: none;\n}\n\n.Footer_link_wim:hover {\n  color: rgba(255, 255, 255, 1);\n}\n", "", {"version":3,"sources":["/./src/components/Footer/Footer.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADvBhF;EACE,iBAAiB;EACjB,YAAY;CACb;;AAED;EACE,eAAe;EACf,mBAAmB;EACnB,kBAA8B;EAC9B,mBAAmB;CACpB;;AAED;EACE,+BAA+B;CAChC;;AAED;EAEE,+BAA+B;CAChC;;AAED;EACE,+BAA+B;CAChC;;AAED;EAEE,iBAAiB;EACjB,eAAe;CAChB;;AAED;EAGE,+BAA+B;EAC/B,sBAAsB;CACvB;;AAED;EACE,8BAA8B;CAC/B","file":"Footer.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n.root {\n  background: #333;\n  color: #fff;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 20px 15px;\n  max-width: $max-content-width;\n  text-align: center;\n}\n\n.text {\n  color: rgba(255, 255, 255, .5);\n}\n\n.textMuted {\n  composes: text;\n  color: rgba(255, 255, 255, .3);\n}\n\n.spacer {\n  color: rgba(255, 255, 255, .3);\n}\n\n.text,\n.link {\n  padding: 2px 5px;\n  font-size: 1em;\n}\n\n.link,\n.link:active,\n.link:visited {\n  color: rgba(255, 255, 255, .6);\n  text-decoration: none;\n}\n\n.link:hover {\n  color: rgba(255, 255, 255, 1);\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -4777,7 +4932,7 @@ module.exports =
   };
 
 /***/ }),
-/* 66 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -4785,7 +4940,7 @@ module.exports =
   
   
   // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Header_root_1Mv {\n  background: #fff;\n  color: #fff;\n}\n\n.Header_container_1jj {\n  margin: 0 auto;\n  padding: 20px 0;\n  max-width: 1000px;\n  border-bottom: 1px solid #000;\n}\n\n.Header_brand_3Km {\n  color: rgb(26, 26, 26);\n  text-decoration: none;\n  font-size: 1.75em; /* ~28px */\n}\n\n.Header_brandTxt_fin {\n  margin-left: 10px;\n  font-family: 'Fredericka the Great', cursive;\n}\n\n.Header_nav_3h2 {\n  float: right;\n  margin-top: 6px;\n}\n\n.Header_banner_3Ep {\n  text-align: center;\n}\n\n.Header_bannerTitle_313 {\n  margin: 0;\n  padding: 10px;\n  font-weight: normal;\n  font-size: 4em;\n  line-height: 1em;\n}\n\n.Header_bannerDesc_3Bf {\n  padding: 0;\n  color: rgba(255, 255, 255, .5);\n  font-size: 1.25em;\n  margin: 0;\n}\n", "", {"version":3,"sources":["/./src/components/Header/Header.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADjChF;EACE,iBAAiB;EACjB,YAAY;CACb;;AAED;EACE,eAAe;EACf,gBAAgB;EAChB,kBAA8B;EAC9B,8BAA8B;CAC/B;;AAED;EACE,uBAA2C;EAC3C,sBAAsB;EACtB,kBAAkB,CAAC,WAAW;CAC/B;;AAED;EACE,kBAAkB;EAClB,6CAA6C;CAC9C;;AAED;EACE,aAAa;EACb,gBAAgB;CACjB;;AAED;EACE,mBAAmB;CACpB;;AAED;EACE,UAAU;EACV,cAAc;EACd,oBAAoB;EACpB,eAAe;EACf,iBAAiB;CAClB;;AAED;EACE,WAAW;EACX,+BAA+B;EAC/B,kBAAkB;EAClB,UAAU;CACX","file":"Header.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n$brand-color: #000;\n\n.root {\n  background: #fff;\n  color: #fff;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 20px 0;\n  max-width: $max-content-width;\n  border-bottom: 1px solid #000;\n}\n\n.brand {\n  color: color($brand-color lightness(+10%));\n  text-decoration: none;\n  font-size: 1.75em; /* ~28px */\n}\n\n.brandTxt {\n  margin-left: 10px;\n  font-family: 'Fredericka the Great', cursive;\n}\n\n.nav {\n  float: right;\n  margin-top: 6px;\n}\n\n.banner {\n  text-align: center;\n}\n\n.bannerTitle {\n  margin: 0;\n  padding: 10px;\n  font-weight: normal;\n  font-size: 4em;\n  line-height: 1em;\n}\n\n.bannerDesc {\n  padding: 0;\n  color: rgba(255, 255, 255, .5);\n  font-size: 1.25em;\n  margin: 0;\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Header_root_1Mv {\n  background: #fff;\n  color: #fff;\n}\n\n.Header_container_1jj {\n  margin: 0 auto;\n  padding: 20px 0;\n  max-width: 1000px;\n  border-bottom: 1px solid rgb(204, 204, 204);\n}\n\n.Header_brand_3Km {\n  color: rgb(26, 26, 26);\n  text-decoration: none;\n  font-size: 2em; /* ~28px */\n  display: block;\n  width: 87px;\n  padding-right: 20px;\n  border-right: 1px solid rgb(204, 204, 204);\n}\n\n.Header_brandTxt_fin {\n  margin-left: 10px;\n  font-family: 'Fredericka the Great', cursive;\n}\n\n.Header_brandTxtBottom_2vA {\n  display: block;\n  text-align: right;\n  font-family: 'Fredericka the Great', cursive;\n}\n\n.Header_nav_3h2 {\n  float: right;\n  margin-top: 6px;\n}\n\n.Header_banner_3Ep {\n  text-align: center;\n}\n\n.Header_bannerTitle_313 {\n  margin: 0;\n  padding: 10px;\n  font-weight: normal;\n  font-size: 4em;\n  line-height: 1em;\n}\n\n.Header_bannerDesc_3Bf {\n  padding: 0;\n  color: rgba(255, 255, 255, .5);\n  font-size: 1.25em;\n  margin: 0;\n}\n", "", {"version":3,"sources":["/./src/components/Header/Header.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADrBhF;EACE,iBAAiB;EACjB,YAAY;CACb;;AAED;EACE,eAAe;EACf,gBAAgB;EAChB,kBAA8B;EAC9B,4CAA6D;CAC9D;;AAED;EACE,uBAA2C;EAC3C,sBAAsB;EACtB,eAAe,CAAC,WAAW;EAC3B,eAAe;EACf,YAAY;EACZ,oBAAoB;EACpB,2CAA4D;CAC7D;;AAED;EACE,kBAAkB;EAClB,6CAA6C;CAC9C;;AACD;EACE,eAAe;EACf,kBAAkB;EAClB,6CAA6C;CAC9C;;AAED;EACE,aAAa;EACb,gBAAgB;CACjB;;AAED;EACE,mBAAmB;CACpB;;AAED;EACE,UAAU;EACV,cAAc;EACd,oBAAoB;EACpB,eAAe;EACf,iBAAiB;CAClB;;AAED;EACE,WAAW;EACX,+BAA+B;EAC/B,kBAAkB;EAClB,UAAU;CACX","file":"Header.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../variables.scss';\n\n$brand-color: #000;\n\n.root {\n  background: #fff;\n  color: #fff;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 20px 0;\n  max-width: $max-content-width;\n  border-bottom: 1px solid color($brand-color lightness(+80%));\n}\n\n.brand {\n  color: color($brand-color lightness(+10%));\n  text-decoration: none;\n  font-size: 2em; /* ~28px */\n  display: block;\n  width: 87px;\n  padding-right: 20px;\n  border-right: 1px solid color($brand-color lightness(+80%));\n}\n\n.brandTxt {\n  margin-left: 10px;\n  font-family: 'Fredericka the Great', cursive;\n}\n.brandTxtBottom {\n  display: block;\n  text-align: right;\n  font-family: 'Fredericka the Great', cursive;\n}\n\n.nav {\n  float: right;\n  margin-top: 6px;\n}\n\n.banner {\n  text-align: center;\n}\n\n.bannerTitle {\n  margin: 0;\n  padding: 10px;\n  font-weight: normal;\n  font-size: 4em;\n  line-height: 1em;\n}\n\n.bannerDesc {\n  padding: 0;\n  color: rgba(255, 255, 255, .5);\n  font-size: 1.25em;\n  margin: 0;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -4793,6 +4948,7 @@ module.exports =
   	"container": "Header_container_1jj",
   	"brand": "Header_brand_3Km",
   	"brandTxt": "Header_brandTxt_fin",
+  	"brandTxtBottom": "Header_brandTxtBottom_2vA",
   	"nav": "Header_nav_3h2",
   	"banner": "Header_banner_3Ep",
   	"bannerTitle": "Header_bannerTitle_313",
@@ -4800,7 +4956,7 @@ module.exports =
   };
 
 /***/ }),
-/* 67 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -4819,7 +4975,7 @@ module.exports =
   };
 
 /***/ }),
-/* 68 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -4833,7 +4989,7 @@ module.exports =
 
 
 /***/ }),
-/* 69 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -4841,7 +4997,7 @@ module.exports =
   
   
   // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Contact_root_8Bk {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Contact_container_OAH {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./src/routes/contact/Contact.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADnChF;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;CAC/B","file":"Contact.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.scss';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: $max-content-width;\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Contact_root_8Bk {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Contact_container_OAH {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./src/routes/contact/Contact.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADvBhF;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;CAC/B","file":"Contact.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.scss';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: $max-content-width;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -4850,7 +5006,7 @@ module.exports =
   };
 
 /***/ }),
-/* 70 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -4858,10 +5014,11 @@ module.exports =
   
   
   // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Home_root_2lG {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Home_container_2tH {\n  margin: 0 auto;\n  padding: 20px 0;\n  max-width: 1000px;\n}\n\n.Home_images_vV0 {\n}\n\n.Home_image_1cj {\n  max-width: 100%;\n  height: auto;\n  width: auto\\9; /* ie8 */\n}\n\n.Home_content_1FR {\n  font-family: 'Josefin Slab', serif;\n}\n\n.Home_contentHeader_39A {\n  font-family: 'Fredericka the Great', cursive;\n  text-decoration: underline;\n}\n", "", {"version":3,"sources":["/./src/routes/home/Home.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADnChF;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,gBAAgB;EAChB,kBAA8B;CAC/B;;AAED;CACC;;AAED;EACE,gBAAgB;EAChB,aAAa;EACb,cAAc,CAAC,SAAS;CACzB;;AAED;EACE,mCAAmC;CACpC;;AAED;EACE,6CAA6C;EAC7C,2BAA2B;CAC5B","file":"Home.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.scss';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 20px 0;\n  max-width: $max-content-width;\n}\n\n.images {\n}\n\n.image {\n  max-width: 100%;\n  height: auto;\n  width: auto\\9; /* ie8 */\n}\n\n.content {\n  font-family: 'Josefin Slab', serif;\n}\n\n.contentHeader {\n  font-family: 'Fredericka the Great', cursive;\n  text-decoration: underline;\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Home_title_32z {\n  margin: 0px;\n}\n\n.Home_root_2lG {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Home_container_2tH {\n  margin: 0 auto;\n  padding: 20px 0;\n  max-width: 1000px;\n}\n\n.Home_images_vV0 {\n}\n\n.Home_image_1cj {\n  max-width: 100%;\n  height: auto;\n  width: auto\\9; /* ie8 */\n}\n\n.Home_content_1FR {\n  font-family: 'Josefin Slab', serif;\n}\n\n.Home_contentHeader_39A {\n  font-family: 'Fredericka the Great', cursive;\n  text-decoration: underline;\n  font-size: 1.75em;\n  font-weight: 300;\n}\n", "", {"version":3,"sources":["/./src/routes/home/Home.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADvBhF;EACE,YAAY;CACb;;AAED;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,gBAAgB;EAChB,kBAA8B;CAC/B;;AAED;CACC;;AAED;EACE,gBAAgB;EAChB,aAAa;EACb,cAAc,CAAC,SAAS;CACzB;;AAED;EACE,mCAAmC;CACpC;;AAED;EACE,6CAA6C;EAC7C,2BAA2B;EAC3B,kBAAkB;EAClB,iBAAiB;CAClB","file":"Home.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.scss';\n\n.title {\n  margin: 0px;\n}\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 20px 0;\n  max-width: $max-content-width;\n}\n\n.images {\n}\n\n.image {\n  max-width: 100%;\n  height: auto;\n  width: auto\\9; /* ie8 */\n}\n\n.content {\n  font-family: 'Josefin Slab', serif;\n}\n\n.contentHeader {\n  font-family: 'Fredericka the Great', cursive;\n  text-decoration: underline;\n  font-size: 1.75em;\n  font-weight: 300;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
+  	"title": "Home_title_32z",
   	"root": "Home_root_2lG",
   	"container": "Home_container_2tH",
   	"images": "Home_images_vV0",
@@ -4871,7 +5028,7 @@ module.exports =
   };
 
 /***/ }),
-/* 71 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -4879,7 +5036,7 @@ module.exports =
   
   
   // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Login_root_2P3 {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Login_container_2r7 {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./src/routes/login/Login.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADnChF;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;CAC/B","file":"Login.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.scss';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: $max-content-width;\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Login_root_2P3 {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Login_container_2r7 {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./src/routes/login/Login.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADvBhF;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;CAC/B","file":"Login.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.scss';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: $max-content-width;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -4888,7 +5045,7 @@ module.exports =
   };
 
 /***/ }),
-/* 72 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -4896,7 +5053,7 @@ module.exports =
   
   
   // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Register_root_3XX {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Register_container_2IL {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./src/routes/register/Register.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAEhF;EACE,gCAAgC;EAChC;;gDAE8C;EAC9C,kBAAkB;CACnB;;AAED;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADnChF;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;CAC/B","file":"Register.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.scss';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: $max-content-width;\n}\n","/*\n * Font\n * ========================================================================== */\n\n@font-face {\n  font-family: FrederickaTheGreat;\n  src: local(\"FrederickaTheGreat Regular\"),\n    local(\"FrederickaTheGreat-Regular\"),\n    url(/public/FrederickatheGreat-Regular.ttf);\n  font-weight: bold;\n}\n\n/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/*\n * Colors\n * ========================================================================== */\n\n/* #222 */\n\n/* #404040 */\n\n/* #555 */\n\n/* #777 */\n\n/* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n/*\n * Layout\n * ========================================================================== */\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n/* Extra small screen / phone */\n\n/* Small screen / tablet */\n\n/* Medium screen / desktop */\n\n/* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n.Register_root_3XX {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Register_container_2IL {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./src/routes/register/Register.scss","/./src/components/variables.scss"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;gFAEgF;;AAGlC,UAAU;;AACd,aAAa;;AAChB,UAAU;;AACJ,UAAU;;AACR,UAAU;;AAEzD;;gFAEgF;;AAIhF;;gFAEgF;;AAIhF;;gFAEgF;;AAEzD,gCAAgC;;AAChC,2BAA2B;;AAC3B,6BAA6B;;AAC5B,iCAAiC;;AAEzD;;gFAEgF;;ADvBhF;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAA8B;CAC/B","file":"Register.scss","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.scss';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: $max-content-width;\n}\n","/*\n * Colors\n * ========================================================================== */\n\n$white-base: hsl(255, 255, 255);\n$gray-darker: color(black lightness(+13.5%)); /* #222 */\n$gray-dark: color(black lightness(+25%)); /* #404040 */\n$gray: color(black lightness(+33.5%)); /* #555 */\n$gray-light: color(black lightness(+46.7%)); /* #777 */\n$gray-lighter: color(black lightness(+93.5%)); /* #eee */\n\n/*\n * Typography\n * ========================================================================== */\n\n$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n/*\n * Layout\n * ========================================================================== */\n\n$max-content-width: 1000px;\n\n/*\n * Media queries breakpoints\n * ========================================================================== */\n\n$screen-xs-min: 480px; /* Extra small screen / phone */\n$screen-sm-min: 768px; /* Small screen / tablet */\n$screen-md-min: 992px; /* Medium screen / desktop */\n$screen-lg-min: 1200px; /* Large screen / wide desktop */\n\n/*\n * Animations\n * ========================================================================== */\n\n$animation-swift-out: .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -4905,7 +5062,7 @@ module.exports =
   };
 
 /***/ }),
-/* 73 */
+/* 76 */
 /***/ (function(module, exports) {
 
   module.exports = Array.isArray || function (arr) {
@@ -4914,11 +5071,11 @@ module.exports =
 
 
 /***/ }),
-/* 74 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(61);
+      var content = __webpack_require__(63);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -4947,11 +5104,11 @@ module.exports =
     
 
 /***/ }),
-/* 75 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(62);
+      var content = __webpack_require__(64);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -4980,11 +5137,44 @@ module.exports =
     
 
 /***/ }),
-/* 76 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(63);
+      var content = __webpack_require__(65);
+      var insertCss = __webpack_require__(3);
+  
+      if (typeof content === 'string') {
+        content = [[module.id, content, '']];
+      }
+  
+      module.exports = content.locals || {};
+      module.exports._getCss = function() { return content.toString(); };
+      module.exports._insertCss = insertCss.bind(null, content);
+    
+      var removeCss = function() {};
+  
+      // Hot Module Replacement
+      // https://webpack.github.io/docs/hot-module-replacement
+      // Only activated in browser context
+      if (false) {
+        module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap&modules&localIdentName=[name]_[local]_[hash:base64:3]!../../../node_modules/postcss-loader/index.js?parser=postcss-scss!./ContentSection.scss", function() {
+          var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap&modules&localIdentName=[name]_[local]_[hash:base64:3]!../../../node_modules/postcss-loader/index.js?parser=postcss-scss!./ContentSection.scss");
+          if (typeof newContent === 'string') {
+            newContent = [[module.id, content, '']];
+          }
+          removeCss = insertCss(newContent, { replace: true });
+        });
+        module.hot.dispose(function() { removeCss(); });
+      }
+    
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+  
+      var content = __webpack_require__(66);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5013,11 +5203,11 @@ module.exports =
     
 
 /***/ }),
-/* 77 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(64);
+      var content = __webpack_require__(67);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5046,11 +5236,11 @@ module.exports =
     
 
 /***/ }),
-/* 78 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(65);
+      var content = __webpack_require__(68);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5079,11 +5269,11 @@ module.exports =
     
 
 /***/ }),
-/* 79 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(66);
+      var content = __webpack_require__(69);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5112,11 +5302,11 @@ module.exports =
     
 
 /***/ }),
-/* 80 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(67);
+      var content = __webpack_require__(70);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5145,11 +5335,11 @@ module.exports =
     
 
 /***/ }),
-/* 81 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(68);
+      var content = __webpack_require__(71);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5178,11 +5368,11 @@ module.exports =
     
 
 /***/ }),
-/* 82 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(69);
+      var content = __webpack_require__(72);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5211,11 +5401,11 @@ module.exports =
     
 
 /***/ }),
-/* 83 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(70);
+      var content = __webpack_require__(73);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5244,11 +5434,11 @@ module.exports =
     
 
 /***/ }),
-/* 84 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(71);
+      var content = __webpack_require__(74);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5277,11 +5467,11 @@ module.exports =
     
 
 /***/ }),
-/* 85 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(72);
+      var content = __webpack_require__(75);
       var insertCss = __webpack_require__(3);
   
       if (typeof content === 'string') {
@@ -5310,7 +5500,7 @@ module.exports =
     
 
 /***/ }),
-/* 86 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
   var jade = __webpack_require__(21);
@@ -5598,7 +5788,7 @@ module.exports =
   }
 
 /***/ }),
-/* 87 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
   var jade = __webpack_require__(21);
@@ -5707,10 +5897,10 @@ module.exports =
   }
 
 /***/ }),
-/* 88 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-  var isarray = __webpack_require__(73)
+  var isarray = __webpack_require__(76)
   
   /**
    * Expose `pathToRegexp`.
@@ -6139,7 +6329,7 @@ module.exports =
 
 
 /***/ }),
-/* 89 */
+/* 93 */
 /***/ (function(module, exports) {
 
   module.exports = function(module) {
@@ -6155,211 +6345,211 @@ module.exports =
 
 
 /***/ }),
-/* 90 */
+/* 94 */
 /***/ (function(module, exports) {
 
   module.exports = require("./assets");
 
 /***/ }),
-/* 91 */
+/* 95 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-polyfill");
 
 /***/ }),
-/* 92 */
+/* 96 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/is-iterable");
 
 /***/ }),
-/* 93 */
+/* 97 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/json/stringify");
 
 /***/ }),
-/* 94 */
+/* 98 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/object/create");
 
 /***/ }),
-/* 95 */
+/* 99 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/object/define-property");
 
 /***/ }),
-/* 96 */
+/* 100 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/object/set-prototype-of");
 
 /***/ }),
-/* 97 */
+/* 101 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/symbol");
 
 /***/ }),
-/* 98 */
+/* 102 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/symbol/iterator");
 
 /***/ }),
-/* 99 */
+/* 103 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/extends");
 
 /***/ }),
-/* 100 */
+/* 104 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 101 */
+/* 105 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/slicedToArray");
 
 /***/ }),
-/* 102 */
+/* 106 */
 /***/ (function(module, exports) {
 
   module.exports = require("babel-runtime/helpers/typeof");
 
 /***/ }),
-/* 103 */
+/* 107 */
 /***/ (function(module, exports) {
 
   module.exports = require("body-parser");
 
 /***/ }),
-/* 104 */
+/* 108 */
 /***/ (function(module, exports) {
 
   module.exports = require("classnames");
 
 /***/ }),
-/* 105 */
+/* 109 */
 /***/ (function(module, exports) {
 
   module.exports = require("cookie-parser");
 
 /***/ }),
-/* 106 */
+/* 110 */
 /***/ (function(module, exports) {
 
   module.exports = require("core-js/library/fn/get-iterator");
 
 /***/ }),
-/* 107 */
+/* 111 */
 /***/ (function(module, exports) {
 
   module.exports = require("core-js/library/fn/object/create");
 
 /***/ }),
-/* 108 */
+/* 112 */
 /***/ (function(module, exports) {
 
   module.exports = require("express");
 
 /***/ }),
-/* 109 */
+/* 113 */
 /***/ (function(module, exports) {
 
   module.exports = require("express-graphql");
 
 /***/ }),
-/* 110 */
+/* 114 */
 /***/ (function(module, exports) {
 
   module.exports = require("express-jwt");
 
 /***/ }),
-/* 111 */
+/* 115 */
 /***/ (function(module, exports) {
 
   module.exports = require("fbjs/lib/emptyFunction");
 
 /***/ }),
-/* 112 */
+/* 116 */
 /***/ (function(module, exports) {
 
   module.exports = require("front-matter");
 
 /***/ }),
-/* 113 */
+/* 117 */
 /***/ (function(module, exports) {
 
   module.exports = require("history/lib/createBrowserHistory");
 
 /***/ }),
-/* 114 */
+/* 118 */
 /***/ (function(module, exports) {
 
   module.exports = require("history/lib/createMemoryHistory");
 
 /***/ }),
-/* 115 */
+/* 119 */
 /***/ (function(module, exports) {
 
   module.exports = require("history/lib/useQueries");
 
 /***/ }),
-/* 116 */
+/* 120 */
 /***/ (function(module, exports) {
 
   module.exports = require("jade");
 
 /***/ }),
-/* 117 */
+/* 121 */
 /***/ (function(module, exports) {
 
   module.exports = require("jsonwebtoken");
 
 /***/ }),
-/* 118 */
+/* 122 */
 /***/ (function(module, exports) {
 
   module.exports = require("markdown-it");
 
 /***/ }),
-/* 119 */
+/* 123 */
 /***/ (function(module, exports) {
 
   module.exports = require("node-fetch");
 
 /***/ }),
-/* 120 */
+/* 124 */
 /***/ (function(module, exports) {
 
   module.exports = require("passport");
 
 /***/ }),
-/* 121 */
+/* 125 */
 /***/ (function(module, exports) {
 
   module.exports = require("passport-facebook");
 
 /***/ }),
-/* 122 */
+/* 126 */
 /***/ (function(module, exports) {
 
   module.exports = require("pg");
 
 /***/ }),
-/* 123 */
+/* 127 */
 /***/ (function(module, exports) {
 
   module.exports = require("pretty-error");
 
 /***/ }),
-/* 124 */
+/* 128 */
 /***/ (function(module, exports) {
 
   module.exports = require("react-dom/server");

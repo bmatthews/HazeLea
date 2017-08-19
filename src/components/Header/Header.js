@@ -18,7 +18,8 @@ function Header() {
     <div className={s.root}>
       <div className={s.container}>
         <Link className={s.brand} to="/">
-          <span className={s.brandTxt}>Haze Lea |</span>
+          <span className={s.brandTxt}>Haze</span>
+          <span className={s.brandTxtBottom}>Lea</span>
         </Link>
       </div>
     </div>

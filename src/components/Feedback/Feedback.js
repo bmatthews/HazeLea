@@ -15,15 +15,19 @@ function Feedback() {
   return (
     <div className={s.root}>
       <div className={s.container}>
-        <a
-          className={s.link}
-          href="https://gitter.im/kriasoft/react-starter-kit"
-        >Ask a question</a>
-        <span className={s.spacer}>|</span>
-        <a
-          className={s.link}
-          href="https://github.com/kriasoft/react-starter-kit/issues/new"
-        >Report an issue</a>
+        <h4 className={s.contactMe}>Contact me:</h4>
+        <div className={s.contactDetailsWrapper}>
+          <dl className={s.contactDetails}>
+            <dt>e.</dt>
+            <dd><a href="mailto:hello@hazelea.co.uk">hello@hazelea.co.uk</a></dd>
+            <dt>t.</dt>
+            <dd><a href="tel:+447598 835 544">07598 835 544</a></dd>
+          </dl>
+          <hr />
+          <h4 className={s.contactMe}>Lets be friends</h4>
+          <i className="fa fa-instagram" aria-hidden="true" />
+          <i className="fa fa-facebook-square fa-inverse" aria-hidden="true" />
+        </div>
       </div>
     </div>
   );

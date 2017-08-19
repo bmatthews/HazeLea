@@ -9,6 +9,10 @@
 
 @import '../../components/variables.scss';
 
+.title {
+  margin: 0px;
+}
+
 .root {
   padding-left: 20px;
   padding-right: 20px;
@@ -36,4 +40,6 @@
 .contentHeader {
   font-family: 'Fredericka the Great', cursive;
   text-decoration: underline;
+  font-size: 1.75em;
+  font-weight: 300;
 }

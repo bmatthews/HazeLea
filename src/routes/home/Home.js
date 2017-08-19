@@ -9,11 +9,12 @@
 
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import ContentSection from '../../components/ContentSection/';
 import s from './Home.scss';
 
 function Home({ news }) {
-  let contentLeft = { float: 'left' };
-  let contentRight = { float: 'right' };
+  let contentLeft = { float: 'left', height: 'auto', maxWidth: '100%' };
+  let contentRight = { float: 'right', height: 'auto', maxWidth: '100%' };
   return (
     <div className={s.root}>
       <div className={s.container}>
@@ -21,9 +22,7 @@ function Home({ news }) {
         <div className={s.images}>
           <img className={s.image} src="https://placeimg.com/1000/480/nature" />
         </div>
-        <div className={s.content}>
-          <h3 className={s.contentHeader}>Service</h3>
-          <img style={contentLeft} src="https://placeimg.com/200/200/nature" />
+        <ContentSection title="Service" imgSrc={require('./service.jpg')}>
           <p>
             I offer a fully bespoke floral design service for your wedding or event. We’ll start
             with a creative consultation where I get to understand you, your taste and inspirations.
@@ -38,10 +37,8 @@ function Home({ news }) {
             a regular basis. I will work closely with each client to understand your individual
             floral needs.
           </p>
-          <img style={contentRight} src="https://placeimg.com/200/200/nature" />
-        </div>
-        <div className={s.content}>
-          <h3 className={s.contentHeader}>About</h3>
+        </ContentSection>
+        <ContentSection title="About" imgSrc={require('./service.jpg')} imagePostion="right">
           <p>
             Haze Lea is a floral design business run by myself, Katherine, based in the Cotswolds. I
             specialise in creating bespoke floral designs with an elegant take on natural beauty for
@@ -62,7 +59,8 @@ function Home({ news }) {
             imperfect. Life is about balance…. the tamed and the untamed and I find happiness in
             finding this balance in nature and my work.
           </p>
-        </div>
+        </ContentSection>
+        <hr />
       </div>
     </div>
   );
