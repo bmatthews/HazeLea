@@ -9,18 +9,22 @@
 
 import React, { Component, PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './ContentSection.scss';
+import s from './ContentSection.css';
 import Link from '../Link';
 
 class ContentSection extends Component {
   render() {
-    let { imagePostion } = this.props;
+    const { imagePostion } = this.props;
     return (
       <div className={s.root}>
-        <h3>{this.props.title}</h3>
+        <h3>
+          {this.props.title}
+        </h3>
         <div
           className={
-            imagePostion && imagePostion == 'right' ? s.imageWrapperRight : s.imageWrapperLeft
+            imagePostion && imagePostion == 'right'
+              ? s.imageWrapperRight
+              : s.imageWrapperLeft
           }
         >
           <img src={this.props.imgSrc} className={s.image} />
@@ -33,4 +37,4 @@ class ContentSection extends Component {
   }
 }
 
-export default withStyles(ContentSection, s);
+export default withStyles(s)(ContentSection);
