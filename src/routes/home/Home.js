@@ -11,6 +11,7 @@ import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import ContentSection from '../../components/ContentSection/';
 import s from './Home.scss';
+import serviceUrl from './service.jpg';
 
 function Home({ news }) {
   let contentLeft = { float: 'left', height: 'auto', maxWidth: '100%' };
@@ -22,7 +23,7 @@ function Home({ news }) {
         <div className={s.images}>
           <img className={s.image} src="https://placeimg.com/1000/480/nature" />
         </div>
-        <ContentSection title="Service" imgSrc={require('./service.jpg')}>
+        <ContentSection title="Service" imgSrc={serviceUrl}>
           <p>
             I offer a fully bespoke floral design service for your wedding or event. We’ll start
             with a creative consultation where I get to understand you, your taste and inspirations.
@@ -38,7 +39,7 @@ function Home({ news }) {
             floral needs.
           </p>
         </ContentSection>
-        <ContentSection title="About" imgSrc={require('./service.jpg')} imagePostion="right">
+        <ContentSection title="About" imgSrc={serviceUrl} imagePostion="right">
           <p>
             Haze Lea is a floral design business run by myself, Katherine, based in the Cotswolds. I
             specialise in creating bespoke floral designs with an elegant take on natural beauty for
