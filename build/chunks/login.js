@@ -386,7 +386,7 @@ function Header(props) {
 
 exports = module.exports = __webpack_require__(8)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab);", ""]);
+
 
 // module
 exports.push([module.i, "._1vSE5{background:#fff;color:#fff}._1EKFE{margin:0 auto;padding:20px 0;max-width:1000px;border-bottom:1px solid #ccc}._2ZSht{color:#1a1a1a;text-decoration:none;font-size:2em;display:block;width:87px;padding-right:20px;border-right:1px solid #ccc}.dkY7q{margin-left:10px}._3YhaB,.dkY7q{font-family:Fredericka the Great,cursive}._3YhaB{display:block;text-align:right}._3k-Mq{float:right;margin-top:6px}._1vQSj{text-align:center}.J73k2{margin:0;padding:10px;font-weight:400;font-size:4em;line-height:1em}._1QHrc{padding:0;color:hsla(0,0%,100%,.5);font-size:1.25em;margin:0}", ""]);
@@ -629,7 +629,7 @@ function Feedback(props) {
 
 exports = module.exports = __webpack_require__(8)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab);", ""]);
+
 
 // module
 exports.push([module.i, "._2g7Ns{font-family:Josefin Slab,serif}.PgkWg{margin:0 auto;padding:20px 8px;max-width:$max-content-width;text-align:center;font-size:1.5em}._30xS9,._30xS9:active,._30xS9:hover,._30xS9:visited{color:#333;text-decoration:none}._2CLg6{margin:0}.uIqkD{width:250px;margin:auto;padding:10px}._2CaGM{margin:5px 0;text-align:justify}._2CaGM dt{display:inline;margin:0;padding:0}._2CaGM dt:before{content:\"\";display:block}._2CaGM dd{margin:0;padding:0;padding-left:20px;display:inline}._30xS9:hover{text-decoration:underline}.IQHzD{padding-right:15px;padding-left:15px}", ""]);
@@ -749,7 +749,7 @@ function Footer(props) {
 
 exports = module.exports = __webpack_require__(8)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab);", ""]);
+
 
 // module
 exports.push([module.i, "._1tZAR{background:#333;color:#fff}.e0IRj{margin:0 auto;padding:20px 15px;max-width:1000px;text-align:center}.tr5-G{color:hsla(0,0%,100%,.5)}._2Di2J{color:hsla(0,0%,100%,.3)}._3Ww1H,.tr5-G{padding:2px 5px;font-size:1em}._3Ww1H,._3Ww1H:active,._3Ww1H:visited{color:hsla(0,0%,100%,.6);text-decoration:none}._3Ww1H:hover{color:#fff}", ""]);
@@ -929,7 +929,7 @@ function Login(props) {
 
 exports = module.exports = __webpack_require__(8)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab);", ""]);
+
 
 // module
 exports.push([module.i, "._3w4yh{padding-left:20px;padding-right:20px}._3tEjn{margin:0 auto;padding:0 0 40px;max-width:380px}._24BLj{font-size:1.25em}._1FsFn{margin-bottom:15px}._2QXdt{display:inline-block;margin-bottom:5px;max-width:100%;font-weight:700}._2uwlQ{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;padding:10px 16px;width:100%;height:46px;outline:0;border:1px solid #ccc;border-radius:0;background:#fff;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);color:#616161;font-size:18px;line-height:1.3333333;-webkit-transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out}._2uwlQ:focus{border-color:#0074c2;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,116,194,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,116,194,.6)}._1ZNK2{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:10px 16px;width:100%;outline:0;border:1px solid #373277;border-radius:0;background:#373277;color:#fff;text-align:center;text-decoration:none;font-size:18px;line-height:1.3333333;cursor:pointer}._1ZNK2:hover{background:rgba(54,50,119,.8)}._1ZNK2:focus{border-color:#0074c2;-webkit-box-shadow:0 0 8px rgba(0,116,194,.6);box-shadow:0 0 8px rgba(0,116,194,.6)}._2FzS0{border-color:#3b5998;background:#3b5998}._2FzS0:hover{background:#2d4373}.lsuqy{border-color:#dd4b39;background:#dd4b39}.lsuqy:hover{background:#c23321}._3DDSi{border-color:#55acee;background:#55acee}._3DDSi:hover{background:#2795e9}._3VPzE{display:inline-block;margin:-2px 12px -2px 0;width:20px;height:20px;vertical-align:middle;fill:currentColor}._2-Nxk{position:relative;z-index:1;display:block;margin-bottom:15px;width:100%;color:#757575;text-align:center;font-size:80%}._2-Nxk:before{position:absolute;top:50%;left:50%;z-index:-1;margin-top:-5px;margin-left:-20px;width:40px;height:10px;background-color:#fff;content:\"\"}._2-Nxk:after{position:absolute;top:49%;z-index:-2;display:block;width:100%;border-bottom:1px solid #ddd;content:\"\"}", ""]);

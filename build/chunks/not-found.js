@@ -85,7 +85,7 @@ function NotFound(props) {
 
 exports = module.exports = __webpack_require__(8)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab);", ""]);
+
 
 // module
 exports.push([module.i, "._1DDJt{padding-left:20px;padding-right:20px}._2w8Vx{margin:0 auto;padding:0 0 40px;max-width:1000px}", ""]);
@@ -483,7 +483,7 @@ function Header(props) {
 
 exports = module.exports = __webpack_require__(8)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab);", ""]);
+
 
 // module
 exports.push([module.i, "._1vSE5{background:#fff;color:#fff}._1EKFE{margin:0 auto;padding:20px 0;max-width:1000px;border-bottom:1px solid #ccc}._2ZSht{color:#1a1a1a;text-decoration:none;font-size:2em;display:block;width:87px;padding-right:20px;border-right:1px solid #ccc}.dkY7q{margin-left:10px}._3YhaB,.dkY7q{font-family:Fredericka the Great,cursive}._3YhaB{display:block;text-align:right}._3k-Mq{float:right;margin-top:6px}._1vQSj{text-align:center}.J73k2{margin:0;padding:10px;font-weight:400;font-size:4em;line-height:1em}._1QHrc{padding:0;color:hsla(0,0%,100%,.5);font-size:1.25em;margin:0}", ""]);
@@ -726,7 +726,7 @@ function Feedback(props) {
 
 exports = module.exports = __webpack_require__(8)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab);", ""]);
+
 
 // module
 exports.push([module.i, "._2g7Ns{font-family:Josefin Slab,serif}.PgkWg{margin:0 auto;padding:20px 8px;max-width:$max-content-width;text-align:center;font-size:1.5em}._30xS9,._30xS9:active,._30xS9:hover,._30xS9:visited{color:#333;text-decoration:none}._2CLg6{margin:0}.uIqkD{width:250px;margin:auto;padding:10px}._2CaGM{margin:5px 0;text-align:justify}._2CaGM dt{display:inline;margin:0;padding:0}._2CaGM dt:before{content:\"\";display:block}._2CaGM dd{margin:0;padding:0;padding-left:20px;display:inline}._30xS9:hover{text-decoration:underline}.IQHzD{padding-right:15px;padding-left:15px}", ""]);
@@ -846,7 +846,7 @@ function Footer(props) {
 
 exports = module.exports = __webpack_require__(8)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab);", ""]);
+
 
 // module
 exports.push([module.i, "._1tZAR{background:#333;color:#fff}.e0IRj{margin:0 auto;padding:20px 15px;max-width:1000px;text-align:center}.tr5-G{color:hsla(0,0%,100%,.5)}._2Di2J{color:hsla(0,0%,100%,.3)}._3Ww1H,.tr5-G{padding:2px 5px;font-size:1em}._3Ww1H,._3Ww1H:active,._3Ww1H:visited{color:hsla(0,0%,100%,.6);text-decoration:none}._3Ww1H:hover{color:#fff}", ""]);
