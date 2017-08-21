@@ -719,6 +719,7 @@ app.get('*', (() => {
       data.children = __WEBPACK_IMPORTED_MODULE_9_react_dom_server___default.a.renderToString(_jsx(__WEBPACK_IMPORTED_MODULE_11__components_App__["a" /* default */], {
         context: context
       }, void 0, route.component));
+
       data.styles = [{ id: 'css', cssText: [...css].join('') }];
       data.scripts = [__WEBPACK_IMPORTED_MODULE_20__assets_json___default.a.vendor.js];
       if (route.chunks) {
@@ -964,7 +965,12 @@ var _ref4 = _jsx('link', {
   href: 'apple-touch-icon.png'
 });
 
-var _ref5 = _jsx('script', {
+var _ref5 = _jsx('link', {
+  href: 'https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab',
+  rel: 'stylesheet'
+});
+
+var _ref6 = _jsx('script', {
   src: 'https://www.google-analytics.com/analytics.js',
   async: true,
   defer: true
@@ -982,7 +988,7 @@ function Html(props) {
     rel: 'preload',
     href: script,
     as: 'script'
-  }, script)), _ref4, styles.map(style => _jsx('style', {
+  }, script)), _ref4, _ref5, styles.map(style => _jsx('style', {
     id: style.id,
     dangerouslySetInnerHTML: { __html: style.cssText }
   }, style.id))), _jsx('body', {}, void 0, _jsx('div', {
@@ -996,7 +1002,7 @@ function Html(props) {
     dangerouslySetInnerHTML: {
       __html: 'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' + `ga('create','${__WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId}','auto');ga('send','pageview')`
     }
-  }), __WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId && _ref5));
+  }), __WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId && _ref6));
 }
 
 Html.defaultProps = {
