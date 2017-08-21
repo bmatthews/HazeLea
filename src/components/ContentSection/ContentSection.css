@@ -24,17 +24,23 @@ h3 {
   text-decoration: underline;
   font-size: 1.5em;
   font-weight: 300;
+  display: inline;
+  margin-right: 10px;
+}
+
+p:first-of-type {
+  display: inline;
 }
 
 .imageWrapperLeft {
   width: 30%;
-  margin: 5px 5px;
+  margin: 15px 15px 15px 0;
   float: left;
 }
 
 .imageWrapperRight {
   width: 30%;
-  margin: 5px 5px;
+  margin: 15px 0 15px 15px;
   float: right;
 }
 

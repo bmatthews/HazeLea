@@ -970,7 +970,19 @@ var _ref5 = _jsx('link', {
   rel: 'stylesheet'
 });
 
-var _ref6 = _jsx('script', {
+var _ref6 = _jsx('link', {
+  rel: 'stylesheet',
+  type: 'text/css',
+  href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
+});
+
+var _ref7 = _jsx('link', {
+  rel: 'stylesheet',
+  type: 'text/css',
+  href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
+});
+
+var _ref8 = _jsx('script', {
   src: 'https://www.google-analytics.com/analytics.js',
   async: true,
   defer: true
@@ -988,7 +1000,7 @@ function Html(props) {
     rel: 'preload',
     href: script,
     as: 'script'
-  }, script)), _ref4, _ref5, styles.map(style => _jsx('style', {
+  }, script)), _ref4, _ref5, _ref6, _ref7, styles.map(style => _jsx('style', {
     id: style.id,
     dangerouslySetInnerHTML: { __html: style.cssText }
   }, style.id))), _jsx('body', {}, void 0, _jsx('div', {
@@ -1002,7 +1014,7 @@ function Html(props) {
     dangerouslySetInnerHTML: {
       __html: 'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' + `ga('create','${__WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId}','auto');ga('send','pageview')`
     }
-  }), __WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId && _ref6));
+  }), __WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId && _ref8));
 }
 
 Html.defaultProps = {
@@ -1501,28 +1513,28 @@ const routes = {
     load: () => __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 51))
   }, {
     path: '/contact',
-    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 52))
+    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 53))
   }, {
     path: '/login',
-    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 53))
+    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 54))
   }, {
     path: '/register',
-    load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 54))
+    load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 55))
   }, {
     path: '/about',
-    load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 55))
+    load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 56))
   }, {
     path: '/privacy',
-    load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 56))
+    load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 57))
   }, {
     path: '/admin',
-    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 57))
+    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 58))
   },
 
   // Wildcard routes, e.g. { path: '*', ... } (must go last)
   {
     path: '*',
-    load: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 58))
+    load: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 59))
   }],
 
   action({ next }) {
@@ -1759,6 +1771,13 @@ module.exports = require("history/createBrowserHistory");
 /***/ (function(module, exports) {
 
 module.exports = require("classnames");
+
+/***/ }),
+/* 51 */,
+/* 52 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-slick");
 
 /***/ })
 /******/ ]);

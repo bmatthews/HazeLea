@@ -17,9 +17,6 @@ class ContentSection extends Component {
     const { imagePostion } = this.props;
     return (
       <div className={s.root}>
-        <h3>
-          {this.props.title}
-        </h3>
         <div
           className={
             imagePostion && imagePostion == 'right'
@@ -30,6 +27,9 @@ class ContentSection extends Component {
           <img src={this.props.imgSrc} className={s.image} />
         </div>
         <div className={s.contentWrapper}>
+          <h3>
+            {this.props.title}
+          </h3>
           {this.props.children}
         </div>
       </div>

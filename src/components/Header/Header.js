@@ -12,6 +12,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
 import Link from '../Link';
 import Navigation from '../Navigation';
+import Logo from './HazeLealogo.svg';
 
 class Header extends React.Component {
   render() {
@@ -19,8 +20,7 @@ class Header extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <Link className={s.brand} to="/">
-            <span className={s.brandTxt}>Haze</span>
-            <span className={s.brandTxtBottom}>Lea</span>
+            <img className={s.logo} src={Logo} />
           </Link>
         </div>
       </div>

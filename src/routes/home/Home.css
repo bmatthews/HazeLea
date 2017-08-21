@@ -24,19 +24,15 @@
   max-width: var(--max-content-width);
 }
 
+.images {
+  display: inline;
+}
 .image {
   max-width: 100%;
   height: auto;
   width: auto\9; /* ie8 */
 }
 
-.content {
-  font-family: 'Josefin Slab', serif;
-}
-
-.contentHeader {
-  font-family: 'Fredericka the Great', cursive;
-  text-decoration: underline;
-  font-size: 1.75em;
-  font-weight: 300;
+.contentWrapper {
+  padding-top: 45px;
 }
