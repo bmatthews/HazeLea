@@ -147,6 +147,7 @@ app.get('*', async (req, res, next) => {
         {route.component}
       </App>,
     );
+
     data.styles = [{ id: 'css', cssText: [...css].join('') }];
     data.scripts = [assets.vendor.js];
     if (route.chunks) {
