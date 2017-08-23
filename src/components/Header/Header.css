@@ -20,7 +20,7 @@
 
 .container {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   max-width: var(--max-content-width);
   border-bottom: 1px solid color(var(--brand-color) lightness(+80%));
 }
@@ -28,10 +28,10 @@
 .brand {
   color: color(var(--brand-color) lightness(+10%));
   text-decoration: none;
-  font-size: 2em; /* ~28px */
+  font-size: 1.6em; /* ~28px */
   display: block;
-  width: 135px;
-  padding-right: 20px;
+  width: 120px;
+  padding: 10px;
   border-right: 1px solid color(var(--brand-color) lightness(+80%));
 }
 
@@ -71,5 +71,5 @@
 }
 
 .logo {
-  width: 120px;
+  width: 90%;
 }

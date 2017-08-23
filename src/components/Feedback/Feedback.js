@@ -11,6 +11,9 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Feedback.css';
 
+const facebook = require('react-icons/lib/fa/facebook');
+const instagram = require('react-icons/lib/fa/instagram');
+
 class Feedback extends React.Component {
   render() {
     return (
@@ -21,20 +24,21 @@ class Feedback extends React.Component {
             <dl className={s.contactDetails}>
               <dt>e.</dt>
               <dd>
-                <a href="mailto:hello@hazelea.co.uk">hello@hazelea.co.uk</a>
+                <a className={s.link} href="mailto:hello@hazelea.co.uk">
+                  hello@hazelea.co.uk
+                </a>
               </dd>
               <dt>t.</dt>
               <dd>
-                <a href="tel:+447598 835 544">07598 835 544</a>
+                <a className={s.link} href="tel:+447598 835 544">
+                  07598 835 544
+                </a>
               </dd>
             </dl>
             <hr />
             <h4 className={s.contactMe}>Lets be friends</h4>
-            <i className="fa fa-instagram" aria-hidden="true" />
-            <i
-              className="fa fa-facebook-square fa-inverse"
-              aria-hidden="true"
-            />
+            {React.createElement(facebook, null)}
+            {React.createElement(instagram, null)}
           </div>
         </div>
       </div>

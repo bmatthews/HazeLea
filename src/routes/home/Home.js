@@ -42,7 +42,10 @@ class Home extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      pauseOnHover: false,
     };
     return (
       <div className={s.root}>
@@ -59,13 +62,13 @@ class Home extends React.Component {
               <img className={s.image} src={carousel3Url} />
             </div>
             <div className={s.images}>
+              <img className={s.image} src={carousel6Url} />
+            </div>
+            <div className={s.images}>
               <img className={s.image} src={carousel4Url} />
             </div>
             <div className={s.images}>
               <img className={s.image} src={carousel5Url} />
-            </div>
-            <div className={s.images}>
-              <img className={s.image} src={carousel6Url} />
             </div>
           </Slider>
           <div className={s.contentWrapper}>

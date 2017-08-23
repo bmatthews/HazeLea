@@ -1510,31 +1510,31 @@ const routes = {
   // Keep in mind, routes are evaluated in order
   children: [{
     path: '/',
-    load: () => __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 51))
+    load: () => __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 53))
   }, {
     path: '/contact',
-    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 53))
+    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 55))
   }, {
     path: '/login',
-    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 54))
+    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 56))
   }, {
     path: '/register',
-    load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 55))
+    load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 57))
   }, {
     path: '/about',
-    load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 56))
+    load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 58))
   }, {
     path: '/privacy',
-    load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 57))
+    load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 59))
   }, {
     path: '/admin',
-    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 58))
+    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 60))
   },
 
   // Wildcard routes, e.g. { path: '*', ... } (must go last)
   {
     path: '*',
-    load: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 59))
+    load: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 61))
   }],
 
   action({ next }) {
@@ -1773,8 +1773,20 @@ module.exports = require("history/createBrowserHistory");
 module.exports = require("classnames");
 
 /***/ }),
-/* 51 */,
+/* 51 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-icons/lib/fa/facebook");
+
+/***/ }),
 /* 52 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-icons/lib/fa/instagram");
+
+/***/ }),
+/* 53 */,
+/* 54 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-slick");
