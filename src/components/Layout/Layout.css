@@ -184,3 +184,7 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+.contentContainer {
+  margin-top: 15px;
+}
