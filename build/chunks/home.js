@@ -14,19 +14,10 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 let action = (() => {
   var _ref = _asyncToGenerator(function* ({ fetch }) {
-    const resp = yield fetch('/graphql', {
-      body: JSON.stringify({
-        query: '{news{title,link,content}}'
-      })
-    });
-    const { data } = yield resp.json();
-    if (!data || !data.news) throw new Error('Failed to load the news feed.');
     return {
       chunks: ['home'],
-      title: 'React Starter Kit',
-      component: _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */], {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__Home__["a" /* default */], {
-        news: data.news
-      }))
+      title: 'Haze Lea',
+      component: _ref2
     };
   });
 
@@ -49,6 +40,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 
+
+var _ref2 = _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */], {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_1__Home__["a" /* default */], {}));
 
 /* harmony default export */ __webpack_exports__["default"] = (action);
 
@@ -972,7 +965,7 @@ exports = module.exports = __webpack_require__(8)(false);
 
 
 // module
-exports.push([module.i, "._1KpCR{position:relative}._1KpCR:after{content:\"\";display:table;clear:both}h3{font-family:Fredericka the Great,cursive;text-decoration:underline;font-size:1.3em;font-weight:300;margin-right:10px}h3,p:first-of-type{display:inline}._3n2G9{width:30%;margin:15px 15px 15px 0;float:left}.DiWh7{width:30%;margin:15px 0 15px 15px;float:right}.RvSzj{max-width:100%;height:auto}._2nBB_{font-family:Josefin Slab,serif;font-size:1.2em}", ""]);
+exports.push([module.i, "._1KpCR{position:relative}._1KpCR:after{content:\"\";display:table;clear:both}h3{font-family:Fredericka the Great,cursive;text-decoration:underline;font-size:1.3em;font-weight:300;margin-right:10px}h3,p:first-of-type{display:inline}._3n2G9{margin:15px 15px 15px 0;float:left}._3n2G9,.DiWh7{width:30%;border-radius:10px;overflow:hidden}.DiWh7{margin:15px 0 15px 15px;float:right}.RvSzj{max-width:100%;height:auto}._2nBB_{font-family:Josefin Slab,serif;font-size:1.2em}", ""]);
 
 // exports
 exports.locals = {
@@ -1027,7 +1020,7 @@ exports = module.exports = __webpack_require__(8)(false);
 
 
 // module
-exports.push([module.i, ".ci6mY{margin:0}.fisf4{padding-left:10px;padding-right:10px}._1yZ9z{margin:0 auto;padding:10px 0;max-width:1500px}.frok7{display:inline}._2m4bP{max-width:100%;height:auto;width:auto\\9}.PRqR5{padding-top:45px}", ""]);
+exports.push([module.i, ".ci6mY{margin:0}.fisf4{padding-left:10px;padding-right:10px}._1yZ9z{margin:0 auto;padding:10px 0;max-width:1500px}.frok7{display:inline;border-radius:10px;overflow:hidden}._2m4bP{max-width:100%;height:auto;width:auto\\9}.PRqR5{padding-top:45px}", ""]);
 
 // exports
 exports.locals = {

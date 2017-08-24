@@ -26,6 +26,8 @@
 
 .images {
   display: inline;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .image {
   max-width: 100%;

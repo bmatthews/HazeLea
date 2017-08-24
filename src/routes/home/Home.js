@@ -23,15 +23,7 @@ import carousel6Url from './carousel6.jpg';
 import Slider from 'react-slick';
 
 class Home extends React.Component {
-  static propTypes = {
-    news: PropTypes.arrayOf(
-      PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        link: PropTypes.string.isRequired,
-        content: PropTypes.string,
-      }),
-    ).isRequired,
-  };
+  static propTypes = {};
 
   render() {
     const contentLeft = { float: 'left', height: 'auto', maxWidth: '100%' };

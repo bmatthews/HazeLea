@@ -1,6 +1,6 @@
 {
   "home": {
-    "js": "/assets/home.e013a640.chunk.js"
+    "js": "/assets/home.1b38c41a.chunk.js"
   },
   "privacy": {
     "js": "/assets/privacy.d5e24c55.chunk.js"
@@ -24,9 +24,9 @@
     "js": "/assets/admin.7b293ed3.chunk.js"
   },
   "client": {
-    "js": "/assets/client.c54c9df0.js"
+    "js": "/assets/client.fb64a03a.js"
   },
   "vendor": {
-    "js": "/assets/vendor.9b1a326a.js"
+    "js": "/assets/vendor.9e5d22d0.js"
   }
 }
