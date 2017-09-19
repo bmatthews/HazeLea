@@ -7,7 +7,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		8: 0
+/******/ 		4: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -39,7 +39,7 @@ module.exports =
 /******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./chunks/" + ({"0":"home","1":"privacy","2":"about","3":"register","4":"not-found","5":"login","6":"contact","7":"admin"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./chunks/" + ({"0":"home","1":"privacy","2":"not-found","3":"contact"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -956,33 +956,38 @@ var _ref2 = _jsx('meta', {
 });
 
 var _ref3 = _jsx('meta', {
+  name: 'theme-color',
+  content: '#ffffff'
+});
+
+var _ref4 = _jsx('meta', {
   name: 'viewport',
   content: 'width=device-width, initial-scale=1'
 });
 
-var _ref4 = _jsx('link', {
+var _ref5 = _jsx('link', {
   rel: 'apple-touch-icon',
   href: 'apple-touch-icon.png'
 });
 
-var _ref5 = _jsx('link', {
+var _ref6 = _jsx('link', {
   href: 'https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab',
   rel: 'stylesheet'
-});
-
-var _ref6 = _jsx('link', {
-  rel: 'stylesheet',
-  type: 'text/css',
-  href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
 });
 
 var _ref7 = _jsx('link', {
   rel: 'stylesheet',
   type: 'text/css',
+  href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
+});
+
+var _ref8 = _jsx('link', {
+  rel: 'stylesheet',
+  type: 'text/css',
   href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
 });
 
-var _ref8 = _jsx('script', {
+var _ref9 = _jsx('script', {
   src: 'https://www.google-analytics.com/analytics.js',
   async: true,
   defer: true
@@ -993,14 +998,14 @@ function Html(props) {
   return _jsx('html', {
     className: 'no-js',
     lang: 'en'
-  }, void 0, _jsx('head', {}, void 0, _ref, _ref2, _jsx('title', {}, void 0, title), _jsx('meta', {
+  }, void 0, _jsx('head', {}, void 0, _ref, _ref2, _ref3, _jsx('title', {}, void 0, title), _jsx('meta', {
     name: 'description',
     content: description
-  }), _ref3, scripts.map(script => _jsx('link', {
+  }), _ref4, scripts.map(script => _jsx('link', {
     rel: 'preload',
     href: script,
     as: 'script'
-  }, script)), _ref4, _ref5, _ref6, _ref7, styles.map(style => _jsx('style', {
+  }, script)), _ref5, _ref6, _ref7, _ref8, styles.map(style => _jsx('style', {
     id: style.id,
     dangerouslySetInnerHTML: { __html: style.cssText }
   }, style.id))), _jsx('body', {}, void 0, _jsx('div', {
@@ -1014,7 +1019,7 @@ function Html(props) {
     dangerouslySetInnerHTML: {
       __html: 'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' + `ga('create','${__WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId}','auto');ga('send','pageview')`
     }
-  }), __WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId && _ref8));
+  }), __WEBPACK_IMPORTED_MODULE_3__config___default.a.analytics.googleTrackingId && _ref9));
 }
 
 Html.defaultProps = {
@@ -1513,28 +1518,16 @@ const routes = {
     load: () => __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 53))
   }, {
     path: '/contact',
-    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 55))
-  }, {
-    path: '/login',
-    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 56))
-  }, {
-    path: '/register',
-    load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 57))
-  }, {
-    path: '/about',
-    load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 58))
+    load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 55))
   }, {
     path: '/privacy',
-    load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 59))
-  }, {
-    path: '/admin',
-    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 60))
+    load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 56))
   },
 
   // Wildcard routes, e.g. { path: '*', ... } (must go last)
   {
     path: '*',
-    load: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 61))
+    load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 57))
   }],
 
   action({ next }) {

@@ -20,9 +20,8 @@
 
 .container {
   margin: 0 auto;
-  padding: 10px 0 15px 0;
+  padding: 0;
   max-width: var(--max-content-width);
-  border-bottom: 1px solid color(var(--brand-color) lightness(+80%));
 }
 
 .brand {
@@ -30,13 +29,11 @@
   text-decoration: none;
   font-size: 1.6em; /* ~28px */
   display: block;
-  width: 120px;
-  padding: 10px;
-  border-right: 1px solid color(var(--brand-color) lightness(+80%));
+  padding: 0;
 }
 
 .brandTxt {
-  margin-left: 10px;
+  margin-left: 0;
   font-family: 'Fredericka the Great', cursive;
 }
 
@@ -48,7 +45,7 @@
 
 .nav {
   float: right;
-  margin-top: 6px;
+  margin-top: 0;
 }
 
 .banner {
@@ -57,7 +54,7 @@
 
 .bannerTitle {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   font-weight: normal;
   font-size: 4em;
   line-height: 1em;
@@ -71,5 +68,7 @@
 }
 
 .logo {
-  width: 90%;
+  width: 30%;
+  display: block;
+  margin: 0 auto;
 }

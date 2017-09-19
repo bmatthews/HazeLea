@@ -37,7 +37,7 @@ class Home extends React.Component {
       arrows: false,
       autoplay: true,
       autoplaySpeed: 4000,
-      pauseOnHover: false,
+      pauseOnHover: false
     };
     return (
       <div className={s.root}>
@@ -100,7 +100,7 @@ class Home extends React.Component {
                 I offer a fully bespoke floral design service for your wedding
                 or event. We’ll start with a creative consultation where I get
                 to understand you, your taste and inspirations. I will work
-                closely with you or event planners to translate each unique
+                closely with you or your event planner to translate your unique
                 vision into living works of art with a cohesive style. Your
                 flowers will help to bring every key visual aspect of your day
                 together for a beautiful experience for you and your guests on

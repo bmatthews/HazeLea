@@ -21,17 +21,17 @@ class Html extends React.Component {
     styles: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
-        cssText: PropTypes.string.isRequired,
-      }).isRequired,
+        cssText: PropTypes.string.isRequired
+      }).isRequired
     ),
     scripts: PropTypes.arrayOf(PropTypes.string.isRequired),
     app: PropTypes.object, // eslint-disable-line
-    children: PropTypes.string.isRequired,
+    children: PropTypes.string.isRequired
   };
 
   static defaultProps = {
     styles: [],
-    scripts: [],
+    scripts: []
   };
 
   render() {
@@ -41,13 +41,14 @@ class Html extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+          <meta name="theme-color" content="#ffffff" />
           <title>
             {title}
           </title>
           <meta name="description" content={description} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           {scripts.map(script =>
-            <link key={script} rel="preload" href={script} as="script" />,
+            <link key={script} rel="preload" href={script} as="script" />
           )}
           <link rel="apple-touch-icon" href="apple-touch-icon.png" />
           <link
@@ -69,7 +70,7 @@ class Html extends React.Component {
               key={style.id}
               id={style.id}
               dangerouslySetInnerHTML={{ __html: style.cssText }}
-            />,
+            />
           )}
         </head>
         <body>
@@ -84,7 +85,7 @@ class Html extends React.Component {
                 __html:
                   'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' +
                   `ga('create','${config.analytics
-                    .googleTrackingId}','auto');ga('send','pageview')`,
+                    .googleTrackingId}','auto');ga('send','pageview')`
               }}
             />}
           {config.analytics.googleTrackingId &&

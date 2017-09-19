@@ -37,8 +37,12 @@ class Feedback extends React.Component {
             </dl>
             <hr />
             <h4 className={s.contactMe}>Lets be friends</h4>
-            {React.createElement(facebook, null)}
-            {React.createElement(instagram, null)}
+            <a href="https://www.facebook.com/hazeleafloraldesign/">
+              {React.createElement(facebook, null)}
+            </a>
+            <a href="https://www.instagram.com/hazelea_designs/">
+              {React.createElement(instagram, null)}
+            </a>
           </div>
         </div>
       </div>
