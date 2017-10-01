@@ -15,7 +15,7 @@
 }
 
 .root:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -37,7 +37,7 @@ p:first-of-type {
   width: 30%;
   margin: 15px 15px 15px 0;
   float: left;
-  border-radius: 10px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -45,7 +45,7 @@ p:first-of-type {
   width: 30%;
   margin: 15px 0 15px 15px;
   float: right;
-  border-radius: 10px;
+  border-radius: 0px;
   overflow: hidden;
 }
 

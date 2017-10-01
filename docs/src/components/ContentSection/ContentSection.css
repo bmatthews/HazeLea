@@ -1,0 +1,60 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+
+.root {
+  position: relative;
+  margin-top: 10px;
+}
+
+.root:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h3 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+p:first-of-type {
+  display: inline;
+}
+
+.imageWrapperLeft {
+  width: 30%;
+  margin: 15px 15px 15px 0;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imageWrapperRight {
+  width: 30%;
+  margin: 15px 0 15px 15px;
+  float: right;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.contentWrapper {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.2em;
+}
